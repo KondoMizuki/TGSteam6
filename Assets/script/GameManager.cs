@@ -23,8 +23,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _repeatSpan = 4;
-        _timeElaped = 0;
+        _repeatSpan = 4;//行動が行われるまでの時間
+        _timeElaped = 2;//初期の行動までのやつ
         
     }
 
@@ -35,14 +35,14 @@ public class GameManager : MonoBehaviour
         _timeElaped += Time.deltaTime;
         if (playerManager.PlayerLife > 0 | enemyManeger.EnemyLife > 0)
         {
-            if (_timeElaped >= _repeatSpan)
+            if (_timeElaped >= _repeatSpan)//_repeatSpanが_timeElaped以上になったらバトルをする
             {
                 battle();
-                _timeElaped = 0;
+                _timeElaped = 0;//時間を０にする
 
             }
 
-            if (enemyManeger.EnemyLife < 0)
+            if (enemyManeger.EnemyLife < 0)//体力が0以下にならない
             {
                 enemyManeger.EnemyLife = 0;
 
@@ -59,10 +59,27 @@ public class GameManager : MonoBehaviour
        
     }
 
+    public void rad()
+    {
+        int rad = Random.Range(0, 2);
+    }
+
     public void battle()
     {
-        player();
-        Invoke(nameof(Enemy), 2.0f);
+        if (playerManager.SPD > enemyManeger.SPD)
+        {
+            player();
+            Invoke(nameof(Enemy), 2.0f);
+        }
+        else
+            if(enemyManeger.SPD > playerManager.SPD)
+        {
+            Enemy();
+            Invoke(nameof(player), 2.0f);
+        }
+       
+
+
     }
 
     void player()
