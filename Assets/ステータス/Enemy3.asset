@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
-  m_Name: Goblin
+  m_Name: Enemy3
   m_EditorClassIdentifier: 
   id: 
-  Enemyname: "\u30B4\u30D6\u30EA\u30F3"
-  Life: 5
-  EnemyMaxLife: 5
-  Attack: 7
-  DFE: 3
-  SPD: 1
+  Enemyname: "\u65754"
+  Life: 8
+  EnemyMaxLife: 8
+  Attack: 8
+  DFE: 6
+  SPD: 5

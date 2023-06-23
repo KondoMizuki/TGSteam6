@@ -631,12 +631,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13438806846f0af488a67ab852737781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyData: {fileID: 11400000, guid: 50036ea9b6a63224fb3ac8a4a0e96a63, type: 2}
-  EnemyLife: 5
-  EnemyMaxLife: 5
-  Attack: 7
-  DFE: 3
-  SPD: 1
+  gamemanager: {fileID: 1675925445}
+  Data: {fileID: 11400000, guid: 50036ea9b6a63224fb3ac8a4a0e96a63, type: 2}
+  Data2: {fileID: 11400000, guid: 92e630a6e6b81f840bbde31415731b49, type: 2}
+  Data3: {fileID: 11400000, guid: 1e59227504d5d5943b0f91eebdc44f2e, type: 2}
+  Data4: {fileID: 11400000, guid: 6a487dc5fa22101469d5cbe0d36fa91c, type: 2}
+  Data5: {fileID: 11400000, guid: 85959c1828482cc43973cc9621528ece, type: 2}
+  EnemyLife: 0
+  EnemyMaxLife: 0
+  Attack: 0
+  DFE: 0
+  SPD: 0
   Enemyname: 
 --- !u!114 &1675925443
 MonoBehaviour:

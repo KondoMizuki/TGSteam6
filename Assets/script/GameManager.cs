@@ -107,6 +107,7 @@ public class GameManager : MonoBehaviour
 
     public void Endlog()
     {
+        enemyManeger.Start();
         logManeger.Start();
         playerManager.PlayerLife = playerManager.PlayerLife + 20; //‰ñ•œ
         _timeElaped = 0;//ŽžŠÔ‚ð‚O‚É‚·‚é
