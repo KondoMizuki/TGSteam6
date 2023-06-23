@@ -7,17 +7,17 @@ using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
-    public int EnemyLife = 5;
+    public EnemyData enemyData;
 
-    public int EnemyMaxLife = 5;
+    public int EnemyLife;
 
-    public int Attack = 7;
+    public int EnemyMaxLife;
 
-    public int DFE = 3;
+    public int Attack;
 
-    public int SPD = 1;
+    public int DFE;
 
-   
+    public int SPD;
 
     //public Text EnemyLifeText;
 

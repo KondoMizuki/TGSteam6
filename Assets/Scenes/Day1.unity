@@ -631,6 +631,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13438806846f0af488a67ab852737781, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyData: {fileID: 11400000, guid: 50036ea9b6a63224fb3ac8a4a0e96a63, type: 2}
   EnemyLife: 5
   EnemyMaxLife: 5
   Attack: 7
@@ -694,6 +695,8 @@ MonoBehaviour:
   _timeElaped: 0
   stage: 1
   endstage: 5
+  FloorText: {fileID: 112408427}
+  EndFloorText: {fileID: 549117972}
 --- !u!4 &1675925446
 Transform:
   m_ObjectHideFlags: 0
