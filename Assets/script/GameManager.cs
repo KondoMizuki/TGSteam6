@@ -24,19 +24,24 @@ public class GameManager : MonoBehaviour
 
     public int endstage = 5;
 
-   
+    public Text FloorText;
+
+    public Text EndFloorText;
 
     // Start is called before the first frame update
     public void Start()
     {
         _repeatSpan = 4;//行動が行われるまでの時間
         _timeElaped = 2;//初期の行動までのやつ
-      
+        FloorText.text = "現在 " + stage + "階";//現在の階層
+        EndFloorText.text = "最上階 " + endstage + "階";//終点
+
     }
 
     // Update is called once per frame
     void Update()
     {
+       
 
         _timeElaped += Time.deltaTime;
         if (playerManager.PlayerLife > 0 | enemyManeger.EnemyLife > 0)
@@ -73,11 +78,11 @@ public class GameManager : MonoBehaviour
 
     public void NextStage()
     {
-        if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife == 0)
+        if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife == 0)//プレイヤーが生きてて敵が死んだ場合
         {
 
 
-            if (stage == endstage)
+            if (stage == endstage)//終点と現在のステージが同じ場合終了違う場合次へ
             {
                 logManeger.GameEnd();
                 Invoke(nameof(scene), 2.0f);
@@ -105,6 +110,7 @@ public class GameManager : MonoBehaviour
         logManeger.Start();
         playerManager.PlayerLife = playerManager.PlayerLife + 20; //回復
         _timeElaped = 0;//時間を０にする
+        FloorText.text = "現在 " + stage + "階";//階層更新
     }
 
     public void scene()
