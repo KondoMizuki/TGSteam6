@@ -15,7 +15,7 @@ public class Log : MonoBehaviour
     public GameManager gameManeger;
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         MessageText.text = enemyManager.Enemyname + "‚ªŒ»‚ê‚½";
     }
@@ -31,7 +31,7 @@ public class Log : MonoBehaviour
         MessageText.text = enemyManager.Enemyname + "‚Í" + gameManeger.EnemyDamage + "ƒ_ƒ[ƒW‚ğ—^‚¦‚½";
     }
 
-    void GameEnd()
+    public void GameEnd()
     {
         if(playerManager.PlayerLife == 0)
         {

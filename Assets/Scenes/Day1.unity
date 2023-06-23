@@ -394,7 +394,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764328107}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -632,6 +632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   EnemyLife: 5
+  EnemyMaxLife: 5
   Attack: 7
   DFE: 3
   SPD: 1
@@ -691,6 +692,7 @@ MonoBehaviour:
   EnemyDamage: 0
   _repeatSpan: 0
   _timeElaped: 0
+  stage: 1
 --- !u!4 &1675925446
 Transform:
   m_ObjectHideFlags: 0
@@ -737,7 +739,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1764328107}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -820,8 +822,8 @@ RectTransform:
   - {fileID: 32710968}
   - {fileID: 1606920479}
   - {fileID: 112408426}
-  - {fileID: 549117971}
   - {fileID: 1730623913}
+  - {fileID: 549117971}
   - {fileID: 2110487699}
   - {fileID: 1420927891}
   m_Father: {fileID: 0}

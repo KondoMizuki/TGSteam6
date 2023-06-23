@@ -20,14 +20,18 @@ public class GameManager : MonoBehaviour
 
     public float _timeElaped;
 
-    public int floor = 1;
+    public int stage = 0;
+
+    public int endstage = 5;
+
+   
 
     // Start is called before the first frame update
-    void Start()
+    public void Start()
     {
         _repeatSpan = 4;//s“®‚ªs‚í‚ê‚é‚Ü‚Å‚ÌŠÔ
         _timeElaped = 2;//‰Šú‚Ìs“®‚Ü‚Å‚Ì‚â‚Â
-
+      
     }
 
     // Update is called once per frame
@@ -44,27 +48,72 @@ public class GameManager : MonoBehaviour
 
             }
 
-            if (enemyManeger.EnemyLife < 0)//‘Ì—Í‚ª0ˆÈ‰º‚É‚È‚ç‚È‚¢
-            {
-                enemyManeger.EnemyLife = 0;
-
-            }
-
-            if (playerManager.PlayerLife < 0)
-            {
-                playerManager.PlayerLife = 0;
-            }
+           
 
         }
-
-        if(playerManager.PlayerLife > 0 &&enemyManeger.EnemyLife == 0)
+        if (enemyManeger.EnemyLife < 0)//‘Ì—Í‚ª0ˆÈ‰º‚É‚È‚ç‚È‚¢
         {
-            floor = floor + 1;
+            enemyManeger.EnemyLife = 0;
+
         }
+
+        if (playerManager.PlayerLife < 0)
+        {
+            playerManager.PlayerLife = 0;
+        }
+
+        if (playerManager.PlayerLife > playerManager.MaxLife)
+        {
+            playerManager.PlayerLife = playerManager.MaxLife;
+        }
+
+        NextStage();
 
     }
 
+    public void NextStage()
+    {
+        if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife == 0)
+        {
+
+
+            if (stage == endstage)
+            {
+                logManeger.GameEnd();
+                Invoke(nameof(scene), 2.0f);
+
+
+
+            }
+            else
+            {
+                logManeger.GameEnd();
+                
+                enemyManeger.EnemyLife = enemyManeger.EnemyMaxLife;//•œŠˆ
+                stage = stage + 1;
+                Invoke(nameof(Endlog), 2.0f);
+
+
+
+            }
+
+        }
+    }
+
+    public void Endlog()
+    {
+        logManeger.Start();
+        playerManager.PlayerLife = playerManager.PlayerLife + 20; //‰ñ•œ
+        _timeElaped = 0;//ŠÔ‚ğ‚O‚É‚·‚é
+    }
+
+    public void scene()
+    {
+        SceneManager.LoadScene("Result");
+    }
+
    
+        
 
     public void battle()
     {

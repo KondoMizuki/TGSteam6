@@ -9,6 +9,8 @@ public class Enemy : MonoBehaviour
 {
     public int EnemyLife = 5;
 
+    public int EnemyMaxLife = 5;
+
     public int Attack = 7;
 
     public int DFE = 3;
