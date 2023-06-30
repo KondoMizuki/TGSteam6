@@ -35,14 +35,11 @@ public class GameManager : MonoBehaviour
         _timeElaped = 2;//‰Šú‚Ìs“®‚Ü‚Å‚Ì‚â‚Â
         FloorText.text = "Œ»Ý " + stage + "ŠK";//Œ»Ý‚ÌŠK‘w
         EndFloorText.text = "ÅãŠK " + endstage + "ŠK";//I“_
-
     }
 
     // Update is called once per frame
     void Update()
     {
-       
-
         _timeElaped += Time.deltaTime;
         if (playerManager.PlayerLife > 0 | enemyManeger.EnemyLife > 0)
         {
@@ -73,7 +70,6 @@ public class GameManager : MonoBehaviour
         }
 
         NextStage();
-
     }
 
     public void NextStage()
@@ -162,6 +158,7 @@ public class GameManager : MonoBehaviour
         }
         
     }
+
     void Enemy()
     {
         EnemyDamage = enemyManeger.Attack - playerManager.DFE;
@@ -170,10 +167,7 @@ public class GameManager : MonoBehaviour
             playerManager.PlayerLife = playerManager.PlayerLife - EnemyDamage;
             logManeger.Damage2();
         }
-    }
-
-   
-    
+    } 
 }
     
 
