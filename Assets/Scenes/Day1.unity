@@ -612,6 +612,7 @@ GameObject:
   - component: {fileID: 1675925444}
   - component: {fileID: 1675925443}
   - component: {fileID: 1675925442}
+  - component: {fileID: 1675925447}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -642,7 +643,10 @@ MonoBehaviour:
   Attack: 0
   DFE: 0
   SPD: 0
+  id: 
   Enemyname: 
+  Itemid: 
+  Item: 
 --- !u!114 &1675925443
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -657,7 +661,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerLife: 15
   MaxLife: 15
-  PlayerAttack: 5
+  PlayerAttack: 20
   DFE: 5
   SPD: 5
   NameText: {fileID: 1730623915}
@@ -678,6 +682,7 @@ MonoBehaviour:
   MessageText: {fileID: 1420927892}
   playerManager: {fileID: 1675925443}
   enemyManager: {fileID: 1675925442}
+  itemManager: {fileID: 1675925447}
   gameManeger: {fileID: 1675925445}
 --- !u!114 &1675925445
 MonoBehaviour:
@@ -693,6 +698,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerManager: {fileID: 1675925443}
   enemyManeger: {fileID: 1675925442}
+  itemManager: {fileID: 1675925447}
   logManeger: {fileID: 1675925444}
   PlayerDamage: 0
   EnemyDamage: 0
@@ -717,6 +723,27 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1675925447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675925441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a401e2a4f7e2cc49ad50bfae8843e02, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gamemanager: {fileID: 1675925445}
+  I_Data: {fileID: 11400000, guid: 781c2fb2bdaa39d4fba822562ddaeee2, type: 2}
+  I_Data2: {fileID: 11400000, guid: f5a55245935587148ae89c4a07ef4b63, type: 2}
+  I_Data3: {fileID: 11400000, guid: 73c84f1e9ebda6b41b22130f5636c80a, type: 2}
+  I_Data4: {fileID: 11400000, guid: df837975fddd7094788dbffeea0c617b, type: 2}
+  I_Data5: {fileID: 11400000, guid: 191b4037523230b4db509198baf36131, type: 2}
+  id: 
+  Itemname: 
+  Dropprobability: 0
 --- !u!1 &1730623912
 GameObject:
   m_ObjectHideFlags: 0

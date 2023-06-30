@@ -25,8 +25,13 @@ public class Enemy : MonoBehaviour
     public int SPD;
 
     //public Text EnemyLifeText;
+    public string id;          //“o˜^ID
 
     public string Enemyname;
+
+    public string Itemid;
+
+    public string Item;
 
 
     // Start is called before the first frame update
@@ -35,7 +40,10 @@ public class Enemy : MonoBehaviour
         switch (gamemanager.stage)
         {
             case 1:
+                id = Data.id;
+                Itemid = Data.Itemid;
                 Enemyname = Data.Enemyname;
+                Item = Data.Item;
                 EnemyLife = Data.Life;
                 EnemyMaxLife = Data.EnemyMaxLife;
                 Attack = Data.Attack;
@@ -44,7 +52,10 @@ public class Enemy : MonoBehaviour
                 break;
 
             case 2:
+                id = Data2.id;
+                Itemid = Data2.Itemid;
                 Enemyname = Data2.Enemyname;
+                Item = Data2.Item;
                 EnemyLife = Data2.Life;
                 EnemyMaxLife = Data2.EnemyMaxLife;
                 Attack = Data2.Attack;
@@ -53,7 +64,10 @@ public class Enemy : MonoBehaviour
                 break;
 
             case 3:
+                id = Data3.id;
+                Itemid = Data3.Itemid;
                 Enemyname = Data3.Enemyname;
+                Item = Data3.Item;
                 EnemyLife = Data3.Life;
                 EnemyMaxLife = Data3.EnemyMaxLife;
                 Attack = Data3.Attack;
@@ -62,7 +76,10 @@ public class Enemy : MonoBehaviour
                 break;
 
             case 4:
+                id = Data4.id;
+                Itemid = Data4.Itemid;
                 Enemyname = Data4.Enemyname;
+                Item = Data4.Item;
                 EnemyLife = Data4.Life;
                 EnemyMaxLife = Data4.EnemyMaxLife;
                 Attack = Data4.Attack;
@@ -71,7 +88,10 @@ public class Enemy : MonoBehaviour
                 break;
 
             case 5:
+                id = Data5.id;
+                Itemid = Data5.Itemid;
                 Enemyname = Data5.Enemyname;
+                Item = Data5.Item;
                 EnemyLife = Data5.Life;
                 EnemyMaxLife = Data5.EnemyMaxLife;
                 Attack = Data5.Attack;
@@ -79,7 +99,7 @@ public class Enemy : MonoBehaviour
                 SPD = Data5.SPD;
                 break;
         }
-      }
+    }
         
    
 

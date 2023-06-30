@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
 
     public int MaxLife = 15;
 
-    public int PlayerAttack = 5;
+    public int PlayerAttack = 20;
 
     public int DFE = 5;
 
