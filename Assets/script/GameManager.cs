@@ -116,9 +116,6 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("Result");
     }
 
-   
-        
-
     public void battle()
     {
 
@@ -132,9 +129,6 @@ public class GameManager : MonoBehaviour
             Enemy();
             Invoke(nameof(player), 2.0f);
         }
-
-
-
     }
 
     void player()
