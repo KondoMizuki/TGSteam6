@@ -36,12 +36,18 @@ public class Log : MonoBehaviour
         if(playerManager.PlayerLife == 0)
         {
             MessageText.text = playerManager.playername + "‚Í•‰‚¯‚Ä‚µ‚Ü‚Á‚½";
+            Invoke(nameof(scene), 2.0f);
         }
         else
             if(enemyManager.EnemyLife == 0)
         {
             MessageText.text = enemyManager.Enemyname + "‚Í“|‚ê‚½";
         }
+    }
+
+    public void scene()
+    {
+        SceneManager.LoadScene("Result");
     }
 
     // Update is called once per frame

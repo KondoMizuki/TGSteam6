@@ -150,6 +150,10 @@ public class GameManager : MonoBehaviour
         else
         {
             PlayerDamage = playerManager.PlayerAttack - enemyManeger.DFE;
+            if(PlayerDamage < 0)
+            {
+                PlayerDamage = 0;
+            }
         }
         if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife > 0)
         {
