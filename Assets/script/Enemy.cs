@@ -4,7 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-
 public class Enemy : MonoBehaviour
 {
     public GameManager gamemanager;
@@ -14,7 +13,6 @@ public class Enemy : MonoBehaviour
     public EnemyData Data3;
     public EnemyData Data4;
     public EnemyData Data5;
-
 
     public int EnemyLife;
 

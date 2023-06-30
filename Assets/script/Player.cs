@@ -7,9 +7,9 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public int PlayerLife = 10;
+    public int PlayerLife = 15;
 
-    public int MaxLife = 10;
+    public int MaxLife = 15;
 
     public int PlayerAttack = 5;
 
