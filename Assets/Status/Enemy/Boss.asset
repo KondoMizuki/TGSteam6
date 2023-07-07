@@ -12,8 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
   m_Name: Boss
   m_EditorClassIdentifier: 
-  id: 
+  id: 5
+  Itemid: 5
   Enemyname: "\u30DC\u30B9"
+  Item: "\u3053\u306E\u4E16\u306E\u534A\u5206"
   Life: 10
   EnemyMaxLife: 10
   Attack: 12

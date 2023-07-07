@@ -7,8 +7,10 @@ using UnityEngine;
 public class EnemyData : ScriptableObject   //ScriptableObject‚ğŒp³‚·‚é
 {
     public string id;          //“o˜^ID
+    public string Itemid;
 
     public string Enemyname;//ƒLƒƒƒ‰ƒNƒ^[‚Ì–¼‘O
+    public string Item;
 
     public int Life;//‘Ì—Í
     public int EnemyMaxLife;

@@ -12,6 +12,8 @@ public class Log : MonoBehaviour
 
     public Enemy enemyManager;
 
+    public Item itemManager;
+
     public GameManager gameManeger;
 
     // Start is called before the first frame update
@@ -45,6 +47,10 @@ public class Log : MonoBehaviour
         }
     }
 
+    public void Drop()
+    {
+        MessageText.text = enemyManager.Enemyname + "‚Í" + itemManager.Itemname + "‚ğ—‚Æ‚µ‚½B";
+    }
     public void scene()
     {
         SceneManager.LoadScene("Result");

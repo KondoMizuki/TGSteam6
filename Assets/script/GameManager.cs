@@ -10,6 +10,8 @@ public class GameManager : MonoBehaviour
 
     public Enemy enemyManeger;
 
+    public Item itemManager;
+
     public Log logManeger;
 
     public int PlayerDamage;
@@ -47,16 +49,12 @@ public class GameManager : MonoBehaviour
             {
                 battle();
                 _timeElaped = 0;//時間を０にする
-
             }
-
-           
-
         }
+
         if (enemyManeger.EnemyLife < 0)//体力が0以下にならない
         {
             enemyManeger.EnemyLife = 0;
-
         }
 
         if (playerManager.PlayerLife < 0)
@@ -76,35 +74,39 @@ public class GameManager : MonoBehaviour
     {
         if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife == 0)//プレイヤーが生きてて敵が死んだ場合
         {
-
+            int Ransu = Random.Range(1, 101);
+            if (itemManager.Dropprobability >= Ransu)
+            {
+                Invoke(nameof(Drop), 1.0f);
+            }
 
             if (stage == endstage)//終点と現在のステージが同じ場合終了違う場合次へ
             {
                 logManeger.GameEnd();
                 Invoke(nameof(scene), 2.0f);
-
-
-
             }
             else
             {
                 logManeger.GameEnd();
+
                 enemyManeger.EnemyLife = enemyManeger.EnemyMaxLife;//復活
                 stage = stage + 1;
                 Invoke(nameof(Endlog), 2.0f);
-
-
-
             }
-
         }
     }
 
-   
+
+    public void Drop()
+    {
+        logManeger.Drop();
+    }
+
 
     public void Endlog()
     {
         enemyManeger.Start();
+        itemManager.Start();
         logManeger.Start();
         playerManager.PlayerLife = playerManager.PlayerLife + 20; //回復
         _timeElaped = 0;//時間を０にする
@@ -115,9 +117,6 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Result");
     }
-
-   
-        
 
     public void battle()
     {
@@ -132,6 +131,7 @@ public class GameManager : MonoBehaviour
                
             if (enemyManeger.EnemyLife > 0 && playerManager.PlayerLife > 0)
             {
+                
                 Invoke(nameof(Enemy), 2.0f);
                 Invoke(nameof(NextStage), 3.0f);
             }
@@ -141,19 +141,19 @@ public class GameManager : MonoBehaviour
         {
             if (enemyManeger.EnemyLife > 0 && playerManager.PlayerLife > 0)
             {
-                Enemy();
-                Invoke(nameof(NextStage), 1.0f);
+               NextStage();
+                Invoke(nameof(Enemy), 1.0f);
+                
+              
             }
             if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife > 0)
             {
                 Invoke(nameof(player), 2.0f);
                 Invoke(nameof(NextStage), 3.0f);
+
             }
                
         }
-
-
-
     }
 
     void player()
