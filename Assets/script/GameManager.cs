@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour
             playerManager.PlayerLife = playerManager.MaxLife;
         }
 
-        NextStage();
+        
     }
 
     public void NextStage()
@@ -97,10 +97,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+
     public void Drop()
     {
         logManeger.Drop();
     }
+
 
     public void Endlog()
     {
@@ -122,13 +124,36 @@ public class GameManager : MonoBehaviour
 
         if (playerManager.SPD > enemyManeger.SPD)//‘‚¢‚Ù‚¤‚©‚çs“®
         {
-            player();
-            Invoke(nameof(Enemy), 2.0f);
+            if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife > 0)
+            {
+                player();
+                Invoke(nameof(NextStage), 1.0f);
+            }
+               
+            if (enemyManeger.EnemyLife > 0 && playerManager.PlayerLife > 0)
+            {
+                
+                Invoke(nameof(Enemy), 2.0f);
+                Invoke(nameof(NextStage), 3.0f);
+            }
+               
         }
         else
         {
-            Enemy();
-            Invoke(nameof(player), 2.0f);
+            if (enemyManeger.EnemyLife > 0 && playerManager.PlayerLife > 0)
+            {
+               NextStage();
+                Invoke(nameof(Enemy), 1.0f);
+                
+              
+            }
+            if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife > 0)
+            {
+                Invoke(nameof(player), 2.0f);
+                Invoke(nameof(NextStage), 3.0f);
+
+            }
+               
         }
     }
 
@@ -147,22 +172,20 @@ public class GameManager : MonoBehaviour
                 PlayerDamage = 0;
             }
         }
-        if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife > 0)
-        {
+        
             enemyManeger.EnemyLife = enemyManeger.EnemyLife - PlayerDamage;
             logManeger.Damage1();
-        }
+        
         
     }
 
     void Enemy()
     {
         EnemyDamage = enemyManeger.Attack - playerManager.DFE;
-        if (enemyManeger.EnemyLife > 0 && playerManager.PlayerLife > 0)
-        {
+        
             playerManager.PlayerLife = playerManager.PlayerLife - EnemyDamage;
             logManeger.Damage2();
-        }
+        
     } 
 }
     
