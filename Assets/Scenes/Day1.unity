@@ -613,7 +613,6 @@ GameObject:
   - component: {fileID: 1675925443}
   - component: {fileID: 1675925442}
   - component: {fileID: 1675925447}
-  - component: {fileID: 1675925448}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -660,6 +659,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24f865731143fa54293953bb43796771, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  D_Data: {fileID: 11400000, guid: 24cd8d7bae458e6439415d44210c7c64, type: 2}
   PlayerLife: 15
   MaxLife: 15
   PlayerAttack: 20
@@ -686,6 +686,7 @@ MonoBehaviour:
   enemyManager: {fileID: 1675925442}
   itemManager: {fileID: 1675925447}
   gameManeger: {fileID: 1675925445}
+  isFrist: 1
 --- !u!114 &1675925445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,18 +747,6 @@ MonoBehaviour:
   id: 
   Itemname: 
   Dropprobability: 0
---- !u!114 &1675925448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1675925441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 921852f210e548b49bebc9a257115c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1730623912
 GameObject:
   m_ObjectHideFlags: 0
