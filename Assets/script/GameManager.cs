@@ -49,6 +49,7 @@ public class GameManager : MonoBehaviour
             {
                 battle();
                 _timeElaped = 0;//ŽžŠÔ‚ð‚O‚É‚·‚é
+                logManeger.isFrist = true;
             }
         }
 

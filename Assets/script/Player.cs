@@ -7,6 +7,8 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    public DropedItemData D_Data;
+
     public int PlayerLife = 15;
 
     public int MaxLife = 15;
@@ -28,6 +30,8 @@ public class Player : MonoBehaviour
     {
         NameText.text = "プレイヤー";
         playername = "プレイヤー";
+
+        D_Data.DropedItemList.Clear();
     }
 
     // Update is called once per frame

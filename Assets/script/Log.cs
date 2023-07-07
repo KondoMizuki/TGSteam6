@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class Log : MonoBehaviour
 {
+    public DropedItemData D_Data;
+
     public Text MessageText;
 
     public Player playerManager;
@@ -15,6 +17,8 @@ public class Log : MonoBehaviour
     public Item itemManager;
 
     public GameManager gameManeger;
+
+    public bool isFrist = true;
 
     // Start is called before the first frame update
     public void Start()
@@ -40,8 +44,7 @@ public class Log : MonoBehaviour
             MessageText.text = playerManager.playername + "‚Í•‰‚¯‚Ä‚µ‚Ü‚Á‚½";
             Invoke(nameof(scene), 2.0f);
         }
-        else
-            if(enemyManager.EnemyLife == 0)
+        else if(enemyManager.EnemyLife == 0)
         {
             MessageText.text = enemyManager.Enemyname + "‚Í“|‚ê‚½";
         }
@@ -49,8 +52,16 @@ public class Log : MonoBehaviour
 
     public void Drop()
     {
-        MessageText.text = enemyManager.Enemyname + "‚Í" + itemManager.Itemname + "‚ğ—‚Æ‚µ‚½B";
+        if (isFrist == true)
+        {
+            MessageText.text = enemyManager.Enemyname + "‚Í" + itemManager.Itemname + "‚ğ—‚Æ‚µ‚½B";
+
+            D_Data.DropedItemList.Add(itemManager.Itemname);
+
+            isFrist = false;
+        }
     }
+
     public void scene()
     {
         SceneManager.LoadScene("Result");

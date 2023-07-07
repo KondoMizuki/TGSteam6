@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   Itemname: "\u5206\u6CCC\u7269"
-  Dropprobability: 50
+  Dropprobability: 100
