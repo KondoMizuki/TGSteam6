@@ -17,6 +17,8 @@ public class Result : MonoBehaviour
         DropedItemText.text = "êÌóòïi:" + string.Join(",", D_Data.DropedItemList);
 
         P_Data.PlayerPossessionItemList.AddRange(D_Data.DropedItemList);
+
+        P_Data.PlayerPossessionItemList.Sort();
     }
 
     // Update is called once per frame

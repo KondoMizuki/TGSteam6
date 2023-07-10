@@ -24,7 +24,7 @@ public class END : MonoBehaviour
         UnityEditor.EditorApplication.isPlaying = false;
     }
 
-    /*public void EndBt(int Day)
+    /*public void NextBt(int Day)
     {
         SceneManager.LoadScene("Day " + Day);
     }*/
