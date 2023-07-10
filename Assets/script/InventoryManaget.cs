@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class InventoryManaget : MonoBehaviour
 {
+    int PossessionItem;
+
     public PlayerPossessionItemData P_Data;
 
     public Text PossessionItemText;
@@ -16,13 +18,21 @@ public class InventoryManaget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        InventoryPanel.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        PossessionItemText.text = string.Join(",", P_Data.PlayerPossessionItemList);
+        PossessionItem = P_Data.PlayerPossessionItemList.Count;
+
+        if (PossessionItem == 0)
+        {
+            PossessionItemText.text = "ŠŽ•i‚Í‚ ‚è‚Ü‚¹‚ñ";
+        }else if(PossessionItem >= 1)
+        {
+            PossessionItemText.text = string.Join(",", P_Data.PlayerPossessionItemList);
+        }
     }
 
     public void PanelBt()
