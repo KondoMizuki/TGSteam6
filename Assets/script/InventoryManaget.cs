@@ -29,19 +29,15 @@ public class InventoryManaget : MonoBehaviour
         if (PossessionItem == 0)
         {
             PossessionItemText.text = "ŠŽ•i‚Í‚ ‚è‚Ü‚¹‚ñ";
-        }else if(PossessionItem >= 1)
+        } else if (PossessionItem >= 1)
         {
             PossessionItemText.text = string.Join(",", P_Data.PlayerPossessionItemList);
         }
+        if (Input.GetKeyDown(KeyCode.X))
+        {
+            InventoryPanel.SetActive(!InventoryPanel.activeSelf);
+        }
     }
+     
 
-    public void PanelBt()
-    {
-        InventoryPanel.SetActive(true);
-    }
-
-    public void ExitBt()
-    {
-        InventoryPanel.SetActive(false);
-    }
 }
