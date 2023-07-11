@@ -26,6 +26,8 @@ public class GameManager : MonoBehaviour
 
     public static int endstage = 1;
 
+    public bool isAttack = false;
+
     public Text FloorText;
 
     public Text EndFloorText;
@@ -176,11 +178,9 @@ public class GameManager : MonoBehaviour
                 PlayerDamage = 0;
             }
         }
-        
-            enemyManeger.EnemyLife = enemyManeger.EnemyLife - PlayerDamage;
-            logManeger.Damage1();
-        
-        
+        isAttack = true;
+        enemyManeger.EnemyLife = enemyManeger.EnemyLife - PlayerDamage;
+        logManeger.Damage1();
     }
 
     void Enemy()

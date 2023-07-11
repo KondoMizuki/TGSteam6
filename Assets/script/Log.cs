@@ -21,6 +21,7 @@ public class Log : MonoBehaviour
     public EnemyGenerator enemygenerator;
 
     public bool isFrist = true;
+    public bool isDeath = false;
 
     // Start is called before the first frame update
     public void Start()
@@ -31,8 +32,8 @@ public class Log : MonoBehaviour
 
     public void Damage1()
     {
-       MessageText.text = playerManager.playername + "は" + gameManeger.PlayerDamage + "ダメージを与えた";
-
+        MessageText.text = playerManager.playername + "は" + gameManeger.PlayerDamage + "ダメージを与えた";
+        gameManeger.isAttack = false;
     }
 
     public void Damage2()
@@ -46,6 +47,7 @@ public class Log : MonoBehaviour
         {
             MessageText.text = playerManager.playername + "は負けてしまった";
             Invoke(nameof(scene), 2.0f);
+            isDeath = true;
         }
         else if(enemyManager.EnemyLife == 0)
         {
