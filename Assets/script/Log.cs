@@ -18,12 +18,15 @@ public class Log : MonoBehaviour
 
     public GameManager gameManeger;
 
+    public EnemyGenerator enemygenerator;
+
     public bool isFrist = true;
 
     // Start is called before the first frame update
     public void Start()
     {
         MessageText.text = enemyManager.Enemyname + "‚ªŒ»‚ê‚½";
+        enemygenerator.isFirst = true;
     }
 
     public void Damage1()
