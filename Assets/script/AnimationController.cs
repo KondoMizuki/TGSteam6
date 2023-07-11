@@ -6,6 +6,8 @@ public class AnimationController : MonoBehaviour
 {
     public GameManager gamemanager;
     public Log logmanager;
+    public float endTime = 1.2f;
+    public float time;
 
     // Start is called before the first frame update
     void Start()
@@ -26,15 +28,14 @@ public class AnimationController : MonoBehaviour
         {
             trans = 0;
         }
-        else if(gamemanager.isAttack == true && logmanager.isDeath == false)
+        else if(logmanager.isDeath == false && gamemanager.isAttack == true) 
         {
             trans = 1;
             gamemanager.isAttack = false;
         }
-        else if(gamemanager.isAttack == false && logmanager.isDeath == true)
+        else if(logmanager.isDeath == true)
         {
             trans = 2;
-            logmanager.isDeath = false;
         }
 
         //intパラメーターの値を設定する.

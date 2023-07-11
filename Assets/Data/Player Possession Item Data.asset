@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20dbae0c28fb8b841bc9eb766f198e8b, type: 3}
   m_Name: Player Possession Item Data
   m_EditorClassIdentifier: 
-  PlayerPossessionItemList: []
+  PlayerPossessionItemList:
+  - "\u30EF\u30FC\u30E0\u306E\u76AE"

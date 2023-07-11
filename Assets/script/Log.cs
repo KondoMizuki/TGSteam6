@@ -44,9 +44,9 @@ public class Log : MonoBehaviour
     {
         if(playerManager.PlayerLife == 0)
         {
+            isDeath = true;
             MessageText.text = playerManager.playername + "‚Í•‰‚¯‚Ä‚µ‚Ü‚Á‚½";
             Invoke(nameof(scene), 2.0f);
-            isDeath = true;
         }
         else if(enemyManager.EnemyLife == 0)
         {
