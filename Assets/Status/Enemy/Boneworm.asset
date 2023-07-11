@@ -18,6 +18,6 @@ MonoBehaviour:
   Item: "\u68CD\u68D2"
   Life: 5
   EnemyMaxLife: 5
-  Attack: 100
+  Attack: 7
   DFE: 3
   SPD: 1

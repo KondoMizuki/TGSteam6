@@ -45,6 +45,10 @@ public class Log : MonoBehaviour
         if(playerManager.PlayerLife == 0)
         {
             isDeath = true;
+            if(isDeath == true)
+            {
+                D_Data.DropedItemList.Clear();
+            }
             MessageText.text = playerManager.playername + "‚Í•‰‚¯‚Ä‚µ‚Ü‚Á‚½";
             Invoke(nameof(scene), 2.0f);
         }

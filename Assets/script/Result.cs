@@ -14,16 +14,23 @@ public class Result : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DropedItemText.text = "戦利品:" + string.Join(",", D_Data.DropedItemList);
-
         P_Data.PlayerPossessionItemList.AddRange(D_Data.DropedItemList);
 
         P_Data.PlayerPossessionItemList.Sort();
+
+        //D_Data.DropedItemList.Clear();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (P_Data.PlayerPossessionItemList.Count > 0)
+        {
+            DropedItemText.text = "戦利品:" + string.Join(",", D_Data.DropedItemList);
+        }
+        else if (P_Data.PlayerPossessionItemList.Count == 0)
+        {
+            DropedItemText.text = "今回の戦闘では戦利品はありませんでした。";
+        }
     }
 }

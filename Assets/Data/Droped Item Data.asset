@@ -12,5 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2164f81bcf07d54da731bd35b164243, type: 3}
   m_Name: Droped Item Data
   m_EditorClassIdentifier: 
-  DropedItemList:
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
+  DropedItemList: []
