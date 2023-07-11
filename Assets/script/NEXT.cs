@@ -4,18 +4,16 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class Standby : MonoBehaviour
+public class NEXT : MonoBehaviour
 {
     public int count = 0;
-    public GameObject cursor1;
-    public GameObject cursor2;
-    
+    public Text NextText;
+    public Text EndText;
 
     // Start is called before the first frame update
     void Start()
     {
-        cursor1.SetActive(true);
-        cursor2.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -42,21 +40,19 @@ public class Standby : MonoBehaviour
 
         if (count == 0)
         {
-            cursor1.SetActive(true);
-            cursor2.SetActive(false);
+            NextText.fontSize = 30;
+            EndText.fontSize = 20;
         }
         else
             if (count == 1)
         {
-            cursor1.SetActive(false);
-            cursor2.SetActive(true);
+            NextText.fontSize = 20;
+            EndText.fontSize = 30;
         }
 
         if (count == 0 && Input.GetKey(KeyCode.Space))
         {
-            
-            SceneManager.LoadScene("Day1");
-
+            SceneManager.LoadScene("Standby");
         }
         else
             if (count == 1 && Input.GetKey(KeyCode.Space))

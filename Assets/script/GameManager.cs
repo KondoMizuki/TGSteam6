@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     public int stage = 0;
 
-    public int endstage = 5;
+    public int endstage = 0;
 
     public Text FloorText;
 
@@ -33,6 +33,8 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     public void Start()
     {
+        enemyManeger.EnemyLife = enemyManeger.EnemyMaxLife;
+        endstage = endstage + 1;
         _repeatSpan = 4;//s“®‚ªs‚í‚ê‚é‚Ü‚Å‚ÌŠÔ
         _timeElaped = 2;//‰Šú‚Ìs“®‚Ü‚Å‚Ì‚â‚Â
         FloorText.text = "Œ»İ " + stage + "ŠK";//Œ»İ‚ÌŠK‘w

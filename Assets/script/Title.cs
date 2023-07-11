@@ -7,59 +7,57 @@ using UnityEngine.UI;
 public class Title : MonoBehaviour
 {
     public int count = 0;
-    public GameObject cursor1;
-    public  GameObject cursor2;
+    public Text StartText;
+    public Text OptionText;
 
     // Start is called before the first frame update
     void Start()
     {
-        cursor1.SetActive(true);
-        cursor2.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (count > 1)//カーソル移動
+        {
+            count = count = 1;
+        }
+        if (count < 0)
+        {
+            count = count = 0;
+        }
 
-        if(count > 1)//カーソル移動
+        if (Input.GetKey(KeyCode.RightArrow))
         {
-          count = count = 1;
+            count = count + 1;
         }
-        if(count < 0)
-        {
-          count = count = 0;
-        }
-
-        if(Input.GetKey(KeyCode.RightArrow))
-        {
-           count = count + 1;
-        }
-        if(Input.GetKey(KeyCode.LeftArrow))
+        if (Input.GetKey(KeyCode.LeftArrow))
         {
             count = count - 1;
         }
 
-        
-        if(count == 0)
+
+        if (count == 0)
         {
-            cursor1.SetActive(true);
-            cursor2.SetActive(false);
+            StartText.fontSize = 30;
+            OptionText.fontSize = 20;
         }
         else
             if (count == 1)
         {
-            cursor1.SetActive(false);
-            cursor2.SetActive(true);
+            StartText.fontSize = 20;
+            OptionText.fontSize = 30;
         }
 
-        if(count == 0 && Input.GetKey(KeyCode.Space))
+        if (count == 0 && Input.GetKey(KeyCode.Space))
         {
             SceneManager.LoadScene("Standby");
         }
         else
-            if(count == 1 && Input.GetKey(KeyCode.Space))
+            if (count == 1 && Input.GetKey(KeyCode.Space))
         {
-            
+
         }
     }
 }
