@@ -92,7 +92,6 @@ public class GameManager : MonoBehaviour
             else
             {
                 logManeger.GameEnd();
-
                 enemyManeger.EnemyLife = enemyManeger.EnemyMaxLife;//•œŠˆ
                 stage = stage + 1;
                 Invoke(nameof(Endlog), 2.0f);

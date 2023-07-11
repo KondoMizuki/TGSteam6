@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: de30ba39b3017494292c3f805b8e03ab, type: 3}
-  m_Name: DropItem5
+  m_Name: Leather
   m_EditorClassIdentifier: 
-  id: 5
-  Itemname: "\u3053\u306E\u4E16\u306E\u534A\u5206"
-  Dropprobability: 100
+  id: 1
+  Itemname: "\u30EF\u30FC\u30E0\u306E\u76AE"
+  Dropprobability: 70
