@@ -7,15 +7,16 @@ using UnityEngine.UI;
 public class Standby : MonoBehaviour
 {
     public int count = 0;
-    public GameObject cursor1;
-    public GameObject cursor2;
-    
+    public int upcount = 0;
+    public Text NextText;
+    public Text ShopText;
+    public Text BackText;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        cursor1.SetActive(true);
-        cursor2.SetActive(false);
+        
     }
 
     // Update is called once per frame
@@ -23,11 +24,20 @@ public class Standby : MonoBehaviour
     {
         if (count > 1)//ƒJ[ƒ\ƒ‹ˆÚ“®
         {
-            count = count = 1;
+            count = 1;
         }
         if (count < 0)
         {
-            count = count = 0;
+            count = 0;
+        }
+
+        if(upcount > 1)
+        {
+            upcount = 1;
+        }
+        if(upcount < 0)
+        {
+            upcount = 0;
         }
 
         if (Input.GetKey(KeyCode.RightArrow))
@@ -39,29 +49,53 @@ public class Standby : MonoBehaviour
             count = count - 1;
         }
 
-
-        if (count == 0)
+        if (Input.GetKey(KeyCode.UpArrow))
         {
-            cursor1.SetActive(true);
-            cursor2.SetActive(false);
+            upcount = upcount + 1;
+        }
+        if (Input.GetKey(KeyCode.DownArrow))
+        {
+            upcount = upcount - 1;
+        }
+
+
+        if (count == 0 && upcount == 0)
+        {
+            NextText.fontSize = 30;
+            ShopText.fontSize = 20;
+            BackText.fontSize = 20;
         }
         else
-            if (count == 1)
+            if (count == 1 && upcount == 0)
         {
-            cursor1.SetActive(false);
-            cursor2.SetActive(true);
+            NextText.fontSize = 20;
+            ShopText.fontSize = 30;
+            BackText.fontSize = 20;
+        }
+        else
+
+            if(upcount ==1)
+        {
+            NextText.fontSize = 20;
+            ShopText.fontSize = 20;
+            BackText.fontSize = 30;
         }
 
-        if (count == 0 && Input.GetKey(KeyCode.Space))
+        if (count == 0 && upcount == 0 && Input.GetKey(KeyCode.Space))
         {
             
             SceneManager.LoadScene("Day1");
 
         }
         else
-            if (count == 1 && Input.GetKey(KeyCode.Space))
+            if (count == 1 && upcount == 0 && Input.GetKey(KeyCode.Space))
         {
 
+        }
+        else
+            if(upcount == 1 && Input.GetKey(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Title");
         }
     }
 }
