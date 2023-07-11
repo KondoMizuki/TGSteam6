@@ -12,6 +12,8 @@ public class InventoryManaget : MonoBehaviour
 
     public Text PossessionItemText;
 
+   
+
     //インスペクターウィンドウからゲームオブジェクトを設定する
     public GameObject InventoryPanel;
 
@@ -29,19 +31,19 @@ public class InventoryManaget : MonoBehaviour
         if (PossessionItem == 0)
         {
             PossessionItemText.text = "所持品はありません";
-        }else if(PossessionItem >= 1)
+        }
+        else if (PossessionItem >= 1)
         {
             PossessionItemText.text = string.Join(",", P_Data.PlayerPossessionItemList);
         }
-    }
 
-    public void PanelBt()
-    {
-        InventoryPanel.SetActive(true);
-    }
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            InventoryPanel.SetActive(!InventoryPanel.activeSelf);
 
-    public void ExitBt()
-    {
-        InventoryPanel.SetActive(false);
+        }
     }
+        
+
+   
 }
