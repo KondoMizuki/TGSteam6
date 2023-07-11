@@ -33,7 +33,6 @@ public class Log : MonoBehaviour
     public void Damage1()
     {
         MessageText.text = playerManager.playername + "‚Í" + gameManeger.PlayerDamage + "ƒ_ƒ[ƒW‚ğ—^‚¦‚½";
-        gameManeger.isAttack = false;
     }
 
     public void Damage2()

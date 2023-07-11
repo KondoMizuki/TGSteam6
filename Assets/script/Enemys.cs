@@ -15,7 +15,6 @@ public class Enemys : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log($"{name}");
         if($"{name}" == "Boneworm(Clone)")
         {
             if(gamemanager.stage != 1)
