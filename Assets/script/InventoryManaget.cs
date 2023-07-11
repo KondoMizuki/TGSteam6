@@ -33,7 +33,7 @@ public class InventoryManaget : MonoBehaviour
         {
             PossessionItemText.text = string.Join(",", P_Data.PlayerPossessionItemList);
         }
-        if (Input.GetKeyDown(KeyCode.X))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             InventoryPanel.SetActive(!InventoryPanel.activeSelf);
         }
