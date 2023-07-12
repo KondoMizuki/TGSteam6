@@ -148,10 +148,10 @@ public class GameManager : MonoBehaviour
         {
             if (enemyManeger.EnemyLife > 0 && playerManager.PlayerLife > 0)
             {
-                NextStage();
-                Invoke(nameof(Enemy), 1.0f);
                 
-              
+                Invoke(nameof(Enemy), 1.0f);
+                NextStage();
+
             }
             if (playerManager.PlayerLife > 0 && enemyManeger.EnemyLife > 0)
             {
