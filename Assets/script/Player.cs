@@ -9,6 +9,8 @@ public class Player : MonoBehaviour
 {
     public DropedItemData D_Data;
 
+    public PlayerData Data;
+
     public int PlayerLife = 15;
 
     public int MaxLife = 15;
@@ -30,6 +32,13 @@ public class Player : MonoBehaviour
     {
         NameText.text = "プレイヤー";
         playername = "プレイヤー";
+
+        playername = Data.Playername;
+        PlayerLife = Data.Life;
+        MaxLife = Data.PlayerMaxLife;
+        PlayerAttack = Data.Attack;
+        DFE = Data.DFE;
+        SPD = Data.SPD;
 
         D_Data.DropedItemList.Clear();
     }
