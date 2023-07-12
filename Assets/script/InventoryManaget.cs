@@ -31,13 +31,11 @@ public class InventoryManaget : MonoBehaviour
             PossessionItemText.text = "èäéùïiÇÕÇ†ÇËÇ‹ÇπÇÒ";
         } else if (PossessionItem >= 1)
         {
-            PossessionItemText.text = string.Join(",", P_Data.PlayerPossessionItemList);
+            PossessionItemText.text = "èäéùïi:" + string.Join(",", P_Data.PlayerPossessionItemList);
         }
         if (Input.GetKeyDown(KeyCode.E))
         {
             InventoryPanel.SetActive(!InventoryPanel.activeSelf);
         }
     }
-     
-
 }

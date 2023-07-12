@@ -19,5 +19,6 @@ MonoBehaviour:
   Life: 10
   EnemyMaxLife: 10
   Attack: 12
-  DFE: 10
+  DFE: 8
   SPD: 1
+  DORPGOLD: 0
