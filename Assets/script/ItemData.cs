@@ -11,4 +11,5 @@ public class ItemData : ScriptableObject   //ScriptableObject‚ğŒp³‚·‚é
     public string Itemname;
 
     public int Dropprobability;
+    public int SellingPrice;
 }
