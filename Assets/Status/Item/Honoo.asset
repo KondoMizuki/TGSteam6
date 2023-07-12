@@ -15,3 +15,4 @@ MonoBehaviour:
   id: 3
   Itemname: "\u9B42\u306E\u708E"
   Dropprobability: 30
+  SellingPrice: 50
