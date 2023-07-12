@@ -9,9 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de30ba39b3017494292c3f805b8e03ab, type: 3}
-  m_Name: Leather
+  m_Script: {fileID: 11500000, guid: c75acd360b975c440a859142088f3b76, type: 3}
+  m_Name: Player
   m_EditorClassIdentifier: 
-  id: 1
-  Itemname: "\u30EF\u30FC\u30E0\u306E\u76AE"
-  Dropprobability: 100
+  id: 
+  Playername: "\u30D7\u30EC\u30A4\u30E4\u30FC"
+  Life: 15
+  PlayerMaxLife: 15
+  Attack: 9
+  DFE: 7
+  SPD: 5

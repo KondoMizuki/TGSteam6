@@ -27,6 +27,7 @@ public class GameManager : MonoBehaviour
     public static int endstage = 1;
 
     public bool isAttack = false;
+    public bool isNext = false;
 
     public Text FloorText;
 
@@ -89,6 +90,7 @@ public class GameManager : MonoBehaviour
                 logManeger.GameEnd();
                 enemyManeger.EnemyLife = enemyManeger.EnemyMaxLife;//‘Ì—Í‰ñ•œ
                 endstage = endstage + 1;//ŠK‘w’Ç‰Á
+                isNext = true;
                 Invoke(nameof(scene), 2.0f);
             }
             else
@@ -96,6 +98,7 @@ public class GameManager : MonoBehaviour
                 logManeger.GameEnd();
                 enemyManeger.EnemyLife = enemyManeger.EnemyMaxLife;//•œŠˆ
                 stage = stage + 1;
+                isNext = true;
                 Invoke(nameof(Endlog), 2.0f);
             }
         }
@@ -122,7 +125,6 @@ public class GameManager : MonoBehaviour
     {
         
         SceneManager.LoadScene("Result");
-       
     }
 
     public void battle()
