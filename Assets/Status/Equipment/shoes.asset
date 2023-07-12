@@ -9,16 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
-  m_Name: Boneworm
+  m_Script: {fileID: 11500000, guid: d441c53a2b23b6f40bba2068247da3ac, type: 3}
+  m_Name: shoes
   m_EditorClassIdentifier: 
-  id: 1
-  Itemid: 1
-  Enemyname: "\u30DC\u30FC\u30F3\u30EF\u30FC\u30E0"
-  Item: "\u68CD\u68D2"
-  Life: 5
-  EnemyMaxLife: 5
-  Attack: 7
-  DFE: 3
-  SPD: 1
-  DORPGOLD: 100
+  id: 4
+  Item: "\u9774"
+  MaxLife: 0
+  Attack: 0
+  DFE: 0
+  SPD: 3
+  BuyGold: 200
