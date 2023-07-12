@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
 
     public bool isAttack = false;
     public bool isNext = false;
+    public bool isHurt = false;
 
     public Text FloorText;
 
@@ -119,12 +120,14 @@ public class GameManager : MonoBehaviour
         playerManager.PlayerLife = playerManager.PlayerLife + 20; //‰ñ•œ
         _timeElaped = 0;//ŠÔ‚ğ‚O‚É‚·‚é
         FloorText.text = "Œ»İ " + stage + "ŠK";//ŠK‘wXV
+        isNext = false;
     }
 
     public void scene()
     {
         
         SceneManager.LoadScene("Result");
+        isNext = false;
     }
 
     public void battle()
@@ -189,9 +192,10 @@ public class GameManager : MonoBehaviour
     {
         EnemyDamage = enemyManeger.Attack - playerManager.DFE;
         
-            playerManager.PlayerLife = playerManager.PlayerLife - EnemyDamage;
-            logManeger.Damage2();
-        
+        playerManager.PlayerLife = playerManager.PlayerLife - EnemyDamage;
+        logManeger.Damage2();
+
+        isHurt = true;
     } 
 }
     
