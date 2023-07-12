@@ -15,4 +15,5 @@ public class PlayerData : ScriptableObject   //ScriptableObject‚ğŒp³‚·‚é
     public int Attack;//UŒ‚—Í
     public int DFE;//–hŒä—Í
     public int SPD;//‘f‘‚³
+    public int GOLD;//‚¨‹à
 }
