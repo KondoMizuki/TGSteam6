@@ -24,6 +24,8 @@ public class Enemy : MonoBehaviour
 
     public int SPD;
 
+    public int DORPGOLD;
+
     //public Text EnemyLifeText;
     public string id;          //“o˜^ID
 
@@ -49,6 +51,8 @@ public class Enemy : MonoBehaviour
                 Attack = Data.Attack;
                 DFE = Data.DFE;
                 SPD = Data.SPD;
+                DORPGOLD = Data.DORPGOLD;
+
                 break;
 
             case 2:
@@ -61,6 +65,7 @@ public class Enemy : MonoBehaviour
                 Attack = Data2.Attack;
                 DFE = Data2.DFE;
                 SPD = Data2.SPD;
+                DORPGOLD = Data2.DORPGOLD;
                 break;
 
             case 3:
@@ -73,6 +78,7 @@ public class Enemy : MonoBehaviour
                 Attack = Data3.Attack;
                 DFE = Data3.DFE;
                 SPD = Data3.SPD;
+                DORPGOLD = Data3.DORPGOLD;
                 break;
 
             case 4:
@@ -85,6 +91,7 @@ public class Enemy : MonoBehaviour
                 Attack = Data4.Attack;
                 DFE = Data4.DFE;
                 SPD = Data4.SPD;
+                DORPGOLD = Data4.DORPGOLD;
                 break;
 
             case 5:
@@ -97,6 +104,7 @@ public class Enemy : MonoBehaviour
                 Attack = Data5.Attack;
                 DFE = Data5.DFE;
                 SPD = Data5.SPD;
+                DORPGOLD = Data5.DORPGOLD;
                 break;
         }
     }
