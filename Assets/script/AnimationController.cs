@@ -24,26 +24,25 @@ public class AnimationController : MonoBehaviour
         //あらかじめ設定していたintパラメーター「trans」の値を取り出す.
         int trans = animator.GetInteger("trans");
 
-        Debug.Log(trans);
-        Debug.Log(gamemanager.isNext);
-
-        if (gamemanager.isAttack == false && logmanager.isDeath == false && gamemanager.isNext == false)
+        if (!gamemanager.isAttack && !logmanager.isDeath && !gamemanager.isNext && !gamemanager.isHurt)
         {
             trans = 0;
         }
-        else if(logmanager.isDeath == false && gamemanager.isAttack == true && gamemanager.isNext == false) 
+        else if(!logmanager.isDeath && gamemanager.isAttack && !gamemanager.isNext && !gamemanager.isHurt) 
         {
             trans = 1;
             gamemanager.isAttack = false;
         }
-        else if(logmanager.isDeath == true)
+        else if(logmanager.isDeath)
         {
             trans = 2;
-        }else if(gamemanager.isNext == true)
+        }else if(gamemanager.isNext)
         {
             trans = 3;
-            //gamemanager.isNext = false;
-            Debug.Log(gamemanager.isNext);
+        }else if(gamemanager.isHurt)
+        {
+            trans = 4;
+            gamemanager.isHurt = false;
         }
 
         //intパラメーターの値を設定する.
