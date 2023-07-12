@@ -713,7 +713,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1326533425
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1044,6 +1044,7 @@ MonoBehaviour:
   stage: 1
   isAttack: 0
   isNext: 0
+  isHurt: 0
   FloorText: {fileID: 112408427}
   EndFloorText: {fileID: 549117972}
 --- !u!4 &1675925446
@@ -1079,6 +1080,11 @@ MonoBehaviour:
   I_Data3: {fileID: 11400000, guid: 73c84f1e9ebda6b41b22130f5636c80a, type: 2}
   I_Data4: {fileID: 11400000, guid: df837975fddd7094788dbffeea0c617b, type: 2}
   I_Data5: {fileID: 11400000, guid: 191b4037523230b4db509198baf36131, type: 2}
+  SellingPrice1: 0
+  SellingPrice2: 0
+  SellingPrice3: 0
+  SellingPrice4: 0
+  SellingPrice5: 0
   id: 
   Itemname: 
   Dropprobability: 0
