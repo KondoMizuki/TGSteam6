@@ -991,6 +991,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   D_Data: {fileID: 11400000, guid: 24cd8d7bae458e6439415d44210c7c64, type: 2}
+  Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
   PlayerLife: 15
   MaxLife: 15
   PlayerAttack: 5
@@ -1042,6 +1043,7 @@ MonoBehaviour:
   _timeElaped: 0
   stage: 1
   isAttack: 0
+  isNext: 0
   FloorText: {fileID: 112408427}
   EndFloorText: {fileID: 549117972}
 --- !u!4 &1675925446

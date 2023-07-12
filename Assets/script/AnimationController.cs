@@ -24,11 +24,14 @@ public class AnimationController : MonoBehaviour
         //あらかじめ設定していたintパラメーター「trans」の値を取り出す.
         int trans = animator.GetInteger("trans");
 
-        if(gamemanager.isAttack == false && logmanager.isDeath == false)
+        Debug.Log(trans);
+        Debug.Log(gamemanager.isNext);
+
+        if (gamemanager.isAttack == false && logmanager.isDeath == false && gamemanager.isNext == false)
         {
             trans = 0;
         }
-        else if(logmanager.isDeath == false && gamemanager.isAttack == true) 
+        else if(logmanager.isDeath == false && gamemanager.isAttack == true && gamemanager.isNext == false) 
         {
             trans = 1;
             gamemanager.isAttack = false;
@@ -36,6 +39,11 @@ public class AnimationController : MonoBehaviour
         else if(logmanager.isDeath == true)
         {
             trans = 2;
+        }else if(gamemanager.isNext == true)
+        {
+            trans = 3;
+            //gamemanager.isNext = false;
+            Debug.Log(gamemanager.isNext);
         }
 
         //intパラメーターの値を設定する.
