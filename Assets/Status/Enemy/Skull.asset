@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
   m_Name: Skull
   m_EditorClassIdentifier: 
-  id: 3
+  id: 1
   Itemid: 3
   Enemyname: "\u30B9\u30AB\u30EB"
   Item: "\u30C9\u30ED\u30C3\u30D7\u72693"
@@ -21,3 +21,4 @@ MonoBehaviour:
   Attack: 8
   DFE: 6
   SPD: 5
+  DORPGOLD: 0

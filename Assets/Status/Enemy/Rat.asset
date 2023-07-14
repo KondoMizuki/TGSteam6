@@ -9,14 +9,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c75acd360b975c440a859142088f3b76, type: 3}
-  m_Name: Player
+  m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
+  m_Name: Rat
   m_EditorClassIdentifier: 
-  id: 
-  Playername: "\u30D7\u30EC\u30A4\u30E4\u30FC"
-  Life: 30
-  PlayerMaxLife: 30
-  Attack: 9
-  DFE: 7
-  SPD: 5
-  GOLD: 0
+  id: 1
+  Itemid: 9
+  Enemyname: "\u30E9\u30C3\u30C8"
+  Item: "\u30CD\u30BA\u30DF\u306E\u3057\u3063\u307D"
+  Life: 10
+  EnemyMaxLife: 10
+  Attack: 8
+  DFE: 5
+  SPD: 20
+  DORPGOLD: 0

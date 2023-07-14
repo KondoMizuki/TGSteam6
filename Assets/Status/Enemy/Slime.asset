@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
   m_Name: Slime
   m_EditorClassIdentifier: 
-  id: 2
+  id: 1
   Itemid: 2
   Enemyname: "\u30B9\u30E9\u30A4\u30E0"
   Item: "\u5206\u6CCC\u7269"
@@ -21,3 +21,4 @@ MonoBehaviour:
   Attack: 7
   DFE: 4
   SPD: 3
+  DORPGOLD: 0
