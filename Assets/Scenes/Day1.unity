@@ -695,6 +695,11 @@ MonoBehaviour:
   enemy3: {fileID: 5447343896209397117, guid: 683db52ec02ac8445ad53a259f9d6208, type: 3}
   enemy4: {fileID: 1979774850292392814, guid: a3bf9679bd692de4c89ea253b88db0a6, type: 3}
   enemy5: {fileID: 893070286253280064, guid: aaada49d5b1e96744820be3f877995e7, type: 3}
+  enemy6: {fileID: 2554457028402586440, guid: 4d61ddf870b4dd94b91e2bdc7dcd59b3, type: 3}
+  enemy7: {fileID: 8356831958780023905, guid: 143c84108e46ec74b9b0698c8879c5db, type: 3}
+  enemy8: {fileID: 8236631750019113739, guid: 2e2748a867b68ba4682ffbccc26ca4f1, type: 3}
+  enemy9: {fileID: 7918396688895076701, guid: e72c2a857a3fe5a43bcfceae96e8c139, type: 3}
+  enemy10: {fileID: 8617329098686670350, guid: 645e9796298089244bf74c619f4645ce, type: 3}
   isFirst: 1
 --- !u!1 &1326533424
 GameObject:
@@ -969,6 +974,11 @@ MonoBehaviour:
   Data3: {fileID: 11400000, guid: 1e59227504d5d5943b0f91eebdc44f2e, type: 2}
   Data4: {fileID: 11400000, guid: 6a487dc5fa22101469d5cbe0d36fa91c, type: 2}
   Data5: {fileID: 11400000, guid: 85959c1828482cc43973cc9621528ece, type: 2}
+  Data6: {fileID: 11400000, guid: ec755d8dd3a5f6044a9143c5abe12b9a, type: 2}
+  Data7: {fileID: 11400000, guid: 245fd73ef56499a4686146bc9412a4dc, type: 2}
+  Data8: {fileID: 11400000, guid: 535013059412d4741af7dea03f803b9f, type: 2}
+  Data9: {fileID: 11400000, guid: 682509d80ea07b840b13e37fef6c6ed9, type: 2}
+  Data10: {fileID: 11400000, guid: bfebfd05ebea5d843ac00961b82cdf02, type: 2}
   EnemyLife: 0
   EnemyMaxLife: 0
   Attack: 0
@@ -1081,11 +1091,21 @@ MonoBehaviour:
   I_Data3: {fileID: 11400000, guid: 73c84f1e9ebda6b41b22130f5636c80a, type: 2}
   I_Data4: {fileID: 11400000, guid: df837975fddd7094788dbffeea0c617b, type: 2}
   I_Data5: {fileID: 11400000, guid: 191b4037523230b4db509198baf36131, type: 2}
+  I_Data6: {fileID: 11400000, guid: b11b315d9a0fd9243bd1526168a25c18, type: 2}
+  I_Data7: {fileID: 11400000, guid: b86b1e0bf0c6de846a5ec551c52aaa10, type: 2}
+  I_Data8: {fileID: 11400000, guid: 51ab281fa2522e141bfa45ec164f7be5, type: 2}
+  I_Data9: {fileID: 11400000, guid: ac8da9c0480df3442b6d352e14dba234, type: 2}
+  I_Data10: {fileID: 11400000, guid: 7ca441fe8b33b0043b6db47a4890de59, type: 2}
   SellingPrice1: 0
   SellingPrice2: 0
   SellingPrice3: 0
   SellingPrice4: 0
   SellingPrice5: 0
+  SellingPrice6: 0
+  SellingPrice7: 0
+  SellingPrice8: 0
+  SellingPrice9: 0
+  SellingPrice10: 0
   id: 
   Itemname: 
   Dropprobability: 0

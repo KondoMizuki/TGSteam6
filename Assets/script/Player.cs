@@ -21,8 +21,6 @@ public class Player : MonoBehaviour
 
     public int SPD = 5;
 
-    public int GOLD;
-
     public Text NameText;
 
     public Text PlayerLifeText;
@@ -41,7 +39,6 @@ public class Player : MonoBehaviour
         PlayerAttack = Data.Attack;
         DFE = Data.DFE;
         SPD = Data.SPD;
-        GOLD = Data.GOLD;
 
         D_Data.DropedItemList.Clear();
     }
