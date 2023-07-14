@@ -21,66 +21,27 @@ public class Enemys : MonoBehaviour
             {
                 Destroy(this.gameObject);
             }
-        }
-        else if ($"{name}" == "Slime(Clone)")
+        }else if ($"{name}" == "Slime(Clone)")
         {
             if (gamemanager.stage != 2)
             {
                 Destroy(this.gameObject);
             }
-        }
-        else if ($"{name}" == "Skull(Clone)")
+        }else if ($"{name}" == "Skull(Clone)")
         {
             if (gamemanager.stage != 3)
             {
                 Destroy(this.gameObject);
             }
-        }
-        else if ($"{name}" == "Cerberus(Clone)")
+        }else if ($"{name}" == "Cerberus(Clone)")
         {
             if (gamemanager.stage != 4)
             {
                 Destroy(this.gameObject);
             }
-        }
-        else if ($"{name}" == "Spider(Clone)")
+        }else if ($"{name}" == "Spider(Clone)")
         {
             if (gamemanager.stage != 5)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-        else if ($"{name}" == "Wolf(Clone)")
-        {
-            if (gamemanager.stage != 6)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-        else if ($"{name}" == "Scorpion(Clone)")
-        {
-            if (gamemanager.stage != 7)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-        else if ($"{name}" == "Scorpion(Clone)")
-        {
-            if (gamemanager.stage != 7)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-        else if ($"{name}" == "Scorpion(Clone)")
-        {
-            if (gamemanager.stage != 7)
-            {
-                Destroy(this.gameObject);
-            }
-        }
-        else if ($"{name}" == "Scorpion(Clone)")
-        {
-            if (gamemanager.stage != 7)
             {
                 Destroy(this.gameObject);
             }

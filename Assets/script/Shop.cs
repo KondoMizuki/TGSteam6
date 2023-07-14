@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class Shop : MonoBehaviour
 {
-    public  EquipmentData Equipment;
+    public Equipment equipment;
     public  Player player;
     public int count;
     public int upcount;
@@ -14,6 +14,7 @@ public class Shop : MonoBehaviour
     public Text ShildText;
     public Text ShoesText;
     public Text heartText;
+   
 
     // Start is called before the first frame update
     void Start()
@@ -92,30 +93,41 @@ public class Shop : MonoBehaviour
             heartText.fontSize = 30;
         }
 
-        if (count == 0 && upcount == 0 &&  player.GOLD >= Equipment.BuyGold && Input.GetKeyDown(KeyCode.Space))
+        if (count == 0 && upcount == 0 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
         {
-            player.PlayerAttack = player.PlayerAttack + Equipment.Attack;
-            player.GOLD = player.GOLD - Equipment.BuyGold;
-        }
-        else
-            if (count == 0 && upcount == 1 && player.GOLD >= Equipment.BuyGold && Input.GetKeyDown(KeyCode.Space))
-        {
-            player.PlayerAttack = player.PlayerAttack + Equipment.Attack;
-            player.GOLD = player.GOLD - Equipment.BuyGold;
-        }
-        else
-            if (count == 1 && upcount == 0 && player.GOLD >= Equipment.BuyGold && Input.GetKeyDown(KeyCode.Space))
-        {
-            player.PlayerAttack = player.PlayerAttack + Equipment.Attack;
-            player.GOLD = player.GOLD - Equipment.BuyGold;
-        }
-        else
-            if (count == 1 && upcount == 1 && player.GOLD >= Equipment.BuyGold && Input.GetKeyDown(KeyCode.Space))
-            {
-                player.PlayerAttack = player.PlayerAttack + Equipment.Attack;
-                player.GOLD = player.GOLD - Equipment.BuyGold;
-            }
+            player.MaxLife = player.MaxLife + equipment.MaxLife;
+            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
+            player.DFE = player.DFE + equipment.DFE;
+            player.SPD = player.SPD + equipment.SPD;
 
+        }
+        else
+            if (count == 1 && upcount == 0 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+        {
+            player.MaxLife = player.MaxLife + equipment.MaxLife;
+            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
+            player.DFE = player.DFE + equipment.DFE;
+            player.SPD = player.SPD + equipment.SPD;
+
+        }
+        else
+            if (count == 0 && upcount == -1 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+        {
+            player.MaxLife = player.MaxLife + equipment.MaxLife;
+            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
+            player.DFE = player.DFE + equipment.DFE;
+            player.SPD = player.SPD + equipment.SPD;
+
+        }
+        else
+            if (count == 1 && upcount == -1 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+        {
+            player.MaxLife = player.MaxLife + equipment.MaxLife;
+            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
+            player.DFE = player.DFE + equipment.DFE;
+            player.SPD = player.SPD + equipment.SPD;
+
+        }
 
     }
 }

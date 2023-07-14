@@ -62,9 +62,11 @@ public class Log : MonoBehaviour
     {
         if (isFrist == true)
         {
-            MessageText.text = enemyManager.Enemyname + "‚Í" + itemManager.Itemname + "‚ğ—‚Æ‚µ‚½B";
+            MessageText.text = enemyManager.Enemyname + "‚Í" + itemManager.Itemname + "‚Æ" + enemyManager.DORPGOLD + "G‚ğ—‚Æ‚µ‚½B";
 
             D_Data.DropedItemList.Add(itemManager.Itemname);
+
+            playerManager.GOLD = playerManager.GOLD + enemyManager.DORPGOLD;
 
             isFrist = false;
         }
