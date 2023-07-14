@@ -21,11 +21,5 @@ MonoBehaviour:
   Attack: 7
   DFE: 4
   SPD: 3
-<<<<<<< HEAD
-<<<<<<< HEAD
-  DORPGOLD: 0
-=======
   DORPGOLD: 200
->>>>>>> bbfac53a29d65e8f9450a925f3c262ea61b27ff1
-=======
->>>>>>> parent of 6e5768d (ターンを増やす)
+parent of 6e5768d (ターンを増やす)

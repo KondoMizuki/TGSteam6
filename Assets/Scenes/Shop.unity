@@ -458,6 +458,7 @@ GameObject:
   - component: {fileID: 816487511}
   - component: {fileID: 816487510}
   - component: {fileID: 816487512}
+  - component: {fileID: 816487513}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -477,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4acbd110f710c114bb5de02b5618e426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Equipment: {fileID: 11400000, guid: 8713c2582bf91f74796bf64f4d6fc1a9, type: 2}
+  equipment: {fileID: 816487513}
   player: {fileID: 816487512}
   count: 0
   upcount: 0
@@ -523,6 +524,30 @@ MonoBehaviour:
   NameText: {fileID: 1554325335}
   PlayerLifeText: {fileID: 1698748219}
   playername: 
+--- !u!114 &816487513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 816487509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 055d89821a3455a4ca228c04fedab42e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shop: {fileID: 816487510}
+  Data: {fileID: 0}
+  Data2: {fileID: 0}
+  Data3: {fileID: 0}
+  Data4: {fileID: 0}
+  MaxLife: 0
+  Attack: 0
+  DFE: 0
+  SPD: 0
+  BuyGold: 0
+  id: 
+  Item: 
 --- !u!1 &848988644
 GameObject:
   m_ObjectHideFlags: 0
