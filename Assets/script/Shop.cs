@@ -93,40 +93,43 @@ public class Shop : MonoBehaviour
             heartText.fontSize = 30;
         }
 
-        if (count == 0 && upcount == 0 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+        if (count == 0 && upcount == 0  && Input.GetKey(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
             player.DFE = player.DFE + equipment.DFE;
             player.SPD = player.SPD + equipment.SPD;
+            //player.GOLD = player.GOLD - equipment.BuyGold;
 
         }
         else
-            if (count == 1 && upcount == 0 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+            if (count == 1 && upcount == 0 && Input.GetKey(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
             player.DFE = player.DFE + equipment.DFE;
             player.SPD = player.SPD + equipment.SPD;
+            //player.GOLD = player.GOLD - equipment.BuyGold;
 
         }
         else
-            if (count == 0 && upcount == -1 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+            if (count == 0 && upcount == -1 && Input.GetKey(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
             player.DFE = player.DFE + equipment.DFE;
             player.SPD = player.SPD + equipment.SPD;
+           // player.GOLD = player.GOLD - equipment.BuyGold;
 
         }
         else
-            if (count == 1 && upcount == -1 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+            if (count == 1 && upcount == -1  && Input.GetKey(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
             player.DFE = player.DFE + equipment.DFE;
             player.SPD = player.SPD + equipment.SPD;
-
+          //  player.GOLD = player.GOLD - equipment.BuyGold;
         }
 
     }
