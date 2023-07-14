@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 5
   Itemname: "\u8718\u86DB\u306E\u7CF8"
-  Dropprobability: 20
+  Dropprobability: 5
   SellingPrice: 100

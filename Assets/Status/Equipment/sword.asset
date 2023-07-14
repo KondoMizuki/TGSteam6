@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de30ba39b3017494292c3f805b8e03ab, type: 3}
-  m_Name: Poisonneedle
+  m_Script: {fileID: 11500000, guid: d441c53a2b23b6f40bba2068247da3ac, type: 3}
+  m_Name: sword
   m_EditorClassIdentifier: 
-  id: 7
-  Itemname: "\u6BD2\u91DD"
-  Dropprobability: 10
-  SellingPrice: 300
+  id: 1
+  Item: "\u5263"
+  MaxLife: 0
+  Attack: 5
+  DFE: 0
+  SPD: 0
+  BuyGold: 150
