@@ -9,10 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: de30ba39b3017494292c3f805b8e03ab, type: 3}
-  m_Name: Fur
+  m_Script: {fileID: 11500000, guid: d441c53a2b23b6f40bba2068247da3ac, type: 3}
+  m_Name: shoes
   m_EditorClassIdentifier: 
-  id: 6
-  Itemname: "\u30AA\u30AA\u30AB\u30DF\u306E\u6BDB\u76AE"
-  Dropprobability: 10
-  SellingPrice: 300
+  id: 4
+  Item: "\u9774"
+  MaxLife: 0
+  Attack: 0
+  DFE: 0
+  SPD: 3
+  BuyGold: 200

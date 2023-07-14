@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
   m_Name: Slime
   m_EditorClassIdentifier: 
-  id: 1
+  id: 2
   Itemid: 2
   Enemyname: "\u30B9\u30E9\u30A4\u30E0"
   Item: "\u5206\u6CCC\u7269"
@@ -21,4 +21,11 @@ MonoBehaviour:
   Attack: 7
   DFE: 4
   SPD: 3
+<<<<<<< HEAD
+<<<<<<< HEAD
   DORPGOLD: 0
+=======
+  DORPGOLD: 200
+>>>>>>> bbfac53a29d65e8f9450a925f3c262ea61b27ff1
+=======
+>>>>>>> parent of 6e5768d (ターンを増やす)

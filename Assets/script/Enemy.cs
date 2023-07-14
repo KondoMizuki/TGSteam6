@@ -13,11 +13,6 @@ public class Enemy : MonoBehaviour
     public EnemyData Data3;
     public EnemyData Data4;
     public EnemyData Data5;
-    public EnemyData Data6;
-    public EnemyData Data7;
-    public EnemyData Data8;
-    public EnemyData Data9;
-    public EnemyData Data10;
 
     public int EnemyLife;
 
@@ -110,70 +105,6 @@ public class Enemy : MonoBehaviour
                 DFE = Data5.DFE;
                 SPD = Data5.SPD;
                 DORPGOLD = Data5.DORPGOLD;
-                break;
-
-            case 6:
-                id = Data6.id;
-                Itemid = Data6.Itemid;
-                Enemyname = Data6.Enemyname;
-                Item = Data6.Item;
-                EnemyLife = Data6.Life;
-                EnemyMaxLife = Data6.EnemyMaxLife;
-                Attack = Data6.Attack;
-                DFE = Data6.DFE;
-                SPD = Data6.SPD;
-                DORPGOLD = Data6.DORPGOLD;
-                break;
-
-            case 7:
-                id = Data7.id;
-                Itemid = Data7.Itemid;
-                Enemyname = Data7.Enemyname;
-                Item = Data7.Item;
-                EnemyLife = Data7.Life;
-                EnemyMaxLife = Data7.EnemyMaxLife;
-                Attack = Data7.Attack;
-                DFE = Data7.DFE;
-                SPD = Data7.SPD;
-                DORPGOLD = Data7.DORPGOLD;
-                break;
-
-            case 8:
-                id = Data8.id;
-                Itemid = Data8.Itemid;
-                Enemyname = Data8.Enemyname;
-                Item = Data8.Item;
-                EnemyLife = Data8.Life;
-                EnemyMaxLife = Data8.EnemyMaxLife;
-                Attack = Data8.Attack;
-                DFE = Data8.DFE;
-                SPD = Data8.SPD;
-                DORPGOLD = Data8.DORPGOLD;
-                break;
-
-            case 9:
-                id = Data9.id;
-                Itemid = Data9.Itemid;
-                Enemyname = Data9.Enemyname;
-                Item = Data9.Item;
-                EnemyLife = Data9.Life;
-                EnemyMaxLife = Data9.EnemyMaxLife;
-                Attack = Data9.Attack;
-                DFE = Data9.DFE;
-                SPD = Data9.SPD;
-                DORPGOLD = Data9.DORPGOLD;
-                break;
-            case 10:
-                id = Data10.id;
-                Itemid = Data10.Itemid;
-                Enemyname = Data10.Enemyname;
-                Item = Data10.Item;
-                EnemyLife = Data10.Life;
-                EnemyMaxLife = Data10.EnemyMaxLife;
-                Attack = Data10.Attack;
-                DFE = Data10.DFE;
-                SPD = Data10.SPD;
-                DORPGOLD = Data10.DORPGOLD;
                 break;
         }
     }

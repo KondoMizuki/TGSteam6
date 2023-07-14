@@ -14,9 +14,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 
   Playername: "\u30D7\u30EC\u30A4\u30E4\u30FC"
-  Life: 30
-  PlayerMaxLife: 30
+  Life: 15
+  PlayerMaxLife: 15
   Attack: 9
   DFE: 7
   SPD: 5
+<<<<<<< HEAD
+<<<<<<< HEAD
   GOLD: 0
+=======
+  GOLD: 1000
+>>>>>>> bbfac53a29d65e8f9450a925f3c262ea61b27ff1
+=======
+>>>>>>> parent of 6e5768d (ターンを増やす)
