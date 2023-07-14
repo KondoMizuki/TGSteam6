@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
   m_Name: Cerberus
   m_EditorClassIdentifier: 
-  id: 1
+  id: 4
   Itemid: 4
   Enemyname: "\u30B1\u30EB\u30D9\u30ED\u30B9"
   Item: "\u30C9\u30ED\u30C3\u30D7\u72694"
@@ -21,4 +21,11 @@ MonoBehaviour:
   Attack: 8
   DFE: 6
   SPD: 5
+<<<<<<< HEAD
+<<<<<<< HEAD
   DORPGOLD: 0
+=======
+  DORPGOLD: 150
+>>>>>>> bbfac53a29d65e8f9450a925f3c262ea61b27ff1
+=======
+>>>>>>> parent of 6e5768d (ターンを増やす)
