@@ -12,14 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03e02d8d24a3dcc4b8cb0e121f730ecc, type: 3}
   m_Name: Spider
   m_EditorClassIdentifier: 
-  id: 5
+  id: 1
   Itemid: 5
   Enemyname: "\u30B9\u30D1\u30A4\u30C0\u30FC"
   Item: "\u3053\u306E\u4E16\u306E\u534A\u5206"
   Life: 10
   EnemyMaxLife: 10
-  Attack: 12
+  Attack: 9
   DFE: 8
   SPD: 1
-  DORPGOLD: 300
-  
+  DORPGOLD: 0
