@@ -93,7 +93,7 @@ public class Shop : MonoBehaviour
             heartText.fontSize = 30;
         }
 
-        if (count == 0 && upcount == 0 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+        if (count == 0 && upcount == 0 && Input.GetKeyDown(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
@@ -102,7 +102,7 @@ public class Shop : MonoBehaviour
 
         }
         else
-            if (count == 1 && upcount == 0 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+            if (count == 1 && upcount == 0 && Input.GetKeyDown(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
@@ -111,7 +111,7 @@ public class Shop : MonoBehaviour
 
         }
         else
-            if (count == 0 && upcount == -1 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+            if (count == 0 && upcount == -1 && Input.GetKeyDown(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
@@ -120,7 +120,7 @@ public class Shop : MonoBehaviour
 
         }
         else
-            if (count == 1 && upcount == -1 && equipment.BuyGold <= player.GOLD && Input.GetKey(KeyCode.Space))
+            if (count == 1 && upcount == -1 && Input.GetKeyDown(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;

@@ -274,7 +274,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u5263"
 --- !u!222 &411867995
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -354,7 +354,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u9774"
 --- !u!222 &473082795
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -537,10 +537,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shop: {fileID: 816487510}
-  Data: {fileID: 0}
-  Data2: {fileID: 0}
-  Data3: {fileID: 0}
-  Data4: {fileID: 0}
+  Data: {fileID: 11400000, guid: 8713c2582bf91f74796bf64f4d6fc1a9, type: 2}
+  Data2: {fileID: 11400000, guid: de116c2f2b33cf54c889baa33fcd43eb, type: 2}
+  Data3: {fileID: 11400000, guid: 55dd1392110928e43ba58b98a3d7b575, type: 2}
+  Data4: {fileID: 11400000, guid: e5542869b161cfa4f8d3378fe2a1bb6f, type: 2}
   MaxLife: 0
   Attack: 0
   DFE: 0
@@ -965,7 +965,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u30CF\u30FC\u30C8"
 --- !u!222 &1671877184
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1201,7 +1201,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: "\u76FE"
 --- !u!222 &2090924208
 CanvasRenderer:
   m_ObjectHideFlags: 0
