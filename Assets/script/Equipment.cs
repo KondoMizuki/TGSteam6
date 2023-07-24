@@ -43,7 +43,28 @@ public class Equipment : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (shop.count == 0 && shop.upcount == 0)
+       
+            if (shop.count == 1)
+        {
+            id = Data2.id;
+            MaxLife = Data2.MaxLife;
+            Attack = Data2.Attack;
+            DFE = Data2.DFE;
+            SPD = Data2.SPD;
+            BuyGold = Data2.BuyGold;
+        }
+        else
+            if (shop.count == -1)
+        {
+            id = Data3.id;
+            MaxLife = Data3.MaxLife;
+            Attack = Data3.Attack;
+            DFE = Data3.DFE;
+            SPD = Data3.SPD;
+            BuyGold = Data3.BuyGold;
+        }
+        else
+         if (shop.upcount == 0)
         {
             id = Data.id;
             Item = Data.Item;
@@ -54,27 +75,7 @@ public class Equipment : MonoBehaviour
             BuyGold = Data.BuyGold;
         }
         else
-            if (shop.count == 1 && shop.upcount == 0)
-        {
-            id = Data2.id;
-            MaxLife = Data2.MaxLife;
-            Attack = Data2.Attack;
-            DFE = Data2.DFE;
-            SPD = Data2.SPD;
-            BuyGold = Data2.BuyGold;
-        }
-        else
-            if (shop.count == 0 && shop.upcount == -1)
-        {
-            id = Data3.id;
-            MaxLife = Data3.MaxLife;
-            Attack = Data3.Attack;
-            DFE = Data3.DFE;
-            SPD = Data3.SPD;
-            BuyGold = Data3.BuyGold;
-        }
-        else
-            if (shop.count == 1 && shop.upcount == -1)
+            if ( shop.upcount == -1)
         {
             id = Data4.id;
             MaxLife = Data4.MaxLife;

@@ -63,7 +63,7 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (upcount == 0 && count == 0 )
+        if (upcount == 0 && count == 0 )//åï
         {
             SwordText.fontSize = 30;
             ShildText.fontSize = 20;
@@ -73,7 +73,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 1 )
+        if (count == 1 )//èÇ
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 30;
@@ -83,7 +83,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == -1)
+        if (count == -1)//åC
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -93,7 +93,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (upcount == -1 && count == 0)
+        if (upcount == -1 && count == 0)//ÉnÅ[Ég
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -103,7 +103,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 2)
+        if (count == 2)//îÑÇÈ
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -112,7 +112,7 @@ public class Shop : MonoBehaviour
             sellText.fontSize = 30;
             backText.fontSize = 20;
         }
-        if(count == -2)
+        if(count == -2)//ñﬂÇÈ
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -123,7 +123,7 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (count == 0  && Input.GetKeyDown(KeyCode.Space))
+        if (count == -1  && Input.GetKeyDown(KeyCode.Space))//çwì¸ÇÕã§í 
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
@@ -141,7 +141,7 @@ public class Shop : MonoBehaviour
 
         }
         else
-            if (upcount == 1 && Input.GetKeyDown(KeyCode.Space))
+            if (upcount == 0 && Input.GetKeyDown(KeyCode.Space))
         {
             player.MaxLife = player.MaxLife + equipment.MaxLife;
             player.PlayerAttack = player.PlayerAttack + equipment.Attack;
