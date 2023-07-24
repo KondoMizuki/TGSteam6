@@ -44,7 +44,7 @@ public class Equipment : MonoBehaviour
     void Update()
     {
        
-            if (shop.count == 1)
+        if (shop.count == 1)
         {
             id = Data2.id;
             MaxLife = Data2.MaxLife;
@@ -81,8 +81,8 @@ public class Equipment : MonoBehaviour
             MaxLife = Data4.MaxLife;
             Attack = Data4.Attack;
             DFE = Data4.DFE;
-            SPD = Data.SPD;
-            BuyGold = Data.BuyGold;
+            SPD = Data4.SPD;
+            BuyGold = Data4.BuyGold;
         }
     }
 }

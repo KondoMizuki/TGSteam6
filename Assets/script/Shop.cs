@@ -16,7 +16,8 @@ public class Shop : MonoBehaviour
     public Text heartText;
     public Text backText;
     public Text sellText;
-   
+    public Text GoldText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +28,8 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        GoldText.text = "ŠŽ‹àF" + player.GOLD.ToString();
+
         if (count > 2)//ƒJ[ƒ\ƒ‹ˆÚ“®
         {
             count = count = 2;
@@ -123,41 +126,24 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (count == -1  && Input.GetKeyDown(KeyCode.Space))//w“ü‚Í‹¤’Ê
+        if (Input.GetKeyDown(KeyCode.Space))//w“ü‚Í‹¤’Ê
         {
-            player.MaxLife = player.MaxLife + equipment.MaxLife;
-            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
-            player.DFE = player.DFE + equipment.DFE;
-            player.SPD = player.SPD + equipment.SPD;
-
+            if(count != 2 || count != -2 && player.GOLD >= equipment.BuyGold)
+            {
+                player.MaxLife = player.MaxLife + equipment.MaxLife;
+                player.PlayerAttack = player.PlayerAttack + equipment.Attack;
+                player.DFE = player.DFE + equipment.DFE;
+                player.SPD = player.SPD + equipment.SPD;
+                player.GOLD -= equipment.BuyGold;
+            }
+            if(count == 2)
+            {
+                SceneManager.LoadScene("Sell");
+            }
+            if(count == -2)
+            {
+                SceneManager.LoadScene("Day1");
+            }
         }
-        else
-            if (count == 1 && Input.GetKeyDown(KeyCode.Space))
-        {
-            player.MaxLife = player.MaxLife + equipment.MaxLife;
-            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
-            player.DFE = player.DFE + equipment.DFE;
-            player.SPD = player.SPD + equipment.SPD;
-
-        }
-        else
-            if (upcount == 0 && Input.GetKeyDown(KeyCode.Space))
-        {
-            player.MaxLife = player.MaxLife + equipment.MaxLife;
-            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
-            player.DFE = player.DFE + equipment.DFE;
-            player.SPD = player.SPD + equipment.SPD;
-
-        }
-        else
-            if (upcount == -1 && Input.GetKeyDown(KeyCode.Space))
-        {
-            player.MaxLife = player.MaxLife + equipment.MaxLife;
-            player.PlayerAttack = player.PlayerAttack + equipment.Attack;
-            player.DFE = player.DFE + equipment.DFE;
-            player.SPD = player.SPD + equipment.SPD;
-
-        }
-
     }
 }
