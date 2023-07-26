@@ -128,7 +128,7 @@ public class Shop : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))//w“ü‚Í‹¤’Ê
         {
-            if(count != 2 || count != -2 && player.GOLD >= equipment.BuyGold)
+            if((count != 2 || count != -2) && player.GOLD >= equipment.BuyGold)
             {
                 player.MaxLife = player.MaxLife + equipment.MaxLife;
                 player.PlayerAttack = player.PlayerAttack + equipment.Attack;
@@ -142,7 +142,7 @@ public class Shop : MonoBehaviour
             }
             if(count == -2)
             {
-                SceneManager.LoadScene("Day1");
+                SceneManager.LoadScene("Standby");
             }
         }
     }

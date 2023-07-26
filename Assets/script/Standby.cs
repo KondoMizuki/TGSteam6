@@ -81,19 +81,19 @@ public class Standby : MonoBehaviour
             BackText.fontSize = 30;
         }
 
-        if (count == 0 && upcount == 0 && Input.GetKey(KeyCode.Space))
+        if (count == 0 && upcount == 0 && Input.GetKey(KeyCode.Space))//バトル画面へ
         {
             
             SceneManager.LoadScene("Day1");
 
         }
         else
-            if (count == 1 && upcount == 0 && Input.GetKey(KeyCode.Space))
+            if (count == 1 && upcount == 0 && Input.GetKey(KeyCode.Space))//ショップ
         {
-
+            SceneManager.LoadScene("Shop");
         }
         else
-            if(upcount == 1 && Input.GetKey(KeyCode.Space))
+            if(upcount == 1 && Input.GetKey(KeyCode.Space))//タイトルに戻る
         {
             SceneManager.LoadScene("Title");
         }
