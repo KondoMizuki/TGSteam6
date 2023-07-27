@@ -30,7 +30,7 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GoldText.text = "所持金" + player.GOLD.ToString();
+        GoldText.text = player.GOLD.ToString() + "G";
 
         if (count > 2)//売る
         {
@@ -142,7 +142,7 @@ public class Shop : MonoBehaviour
             }
             if(count == 2)
             {
-                SceneManager.LoadScene("Sell");
+                //SceneManager.LoadScene("Sell");
             }
             if(count == -2)
             {
