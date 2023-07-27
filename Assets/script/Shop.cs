@@ -30,9 +30,9 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GoldText.text = "ŠŽ‹àF" + player.GOLD.ToString();
+        GoldText.text = "æ‰€æŒé‡‘" + player.GOLD.ToString();
 
-        if (count > 2)//ƒJ[ƒ\ƒ‹ˆÚ“®
+        if (count > 2)//å£²ã‚‹
         {
             count = count = 2;
         }
@@ -68,7 +68,7 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (upcount == 0 && count == 0 )//Œ•
+        if (upcount == 0 && count == 0 )//å‰£
         {
             SwordText.fontSize = 30;
             ShildText.fontSize = 20;
@@ -78,7 +78,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 1 )//‚
+        if (count == 1 )//ç›¾
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 30;
@@ -88,7 +88,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == -1)//ŒC
+        if (count == -1)//é´
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -98,7 +98,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (upcount == -1 && count == 0)//ƒn[ƒg
+        if (upcount == -1 && count == 0)//ãƒãƒ¼ãƒˆ
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -108,7 +108,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 2)//”„‚é
+        if (count == 2)//å£²ã‚‹
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -117,7 +117,7 @@ public class Shop : MonoBehaviour
             sellText.fontSize = 30;
             backText.fontSize = 20;
         }
-        if(count == -2)//–ß‚é
+        if(count == -2)//æˆ»ã‚‹
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -128,9 +128,11 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space))//w“ü‚Í‹¤’Ê
+        if (Input.GetKeyDown(KeyCode.Space))//å…±é€šå‡¦ç†
         {
+
             if((count != 2 || count != -2) && Data.GOLD >= equipment.BuyGold)
+
             {
                 Data.PlayerMaxLife += equipment.MaxLife;
                 Data.Attack += equipment.Attack;
@@ -144,7 +146,7 @@ public class Shop : MonoBehaviour
             }
             if(count == -2)
             {
-                SceneManager.LoadScene("Day1");
+                SceneManager.LoadScene("Standby");
             }
         }
     }

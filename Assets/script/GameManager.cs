@@ -170,7 +170,7 @@ public class GameManager : MonoBehaviour
 
     void player()
     {
-        int rad = Random.Range(0, 101);
+        int rad = Random.Range(0, 101);//クリティカル
         if (rad >= 95)
         {
             PlayerDamage = playerManager.PlayerAttack * 2;
@@ -191,7 +191,10 @@ public class GameManager : MonoBehaviour
     void Enemy()
     {
         EnemyDamage = enemyManeger.Attack - playerManager.DFE;
-        
+        if(EnemyDamage <= 0)
+        {
+            EnemyDamage = 1;
+        }
         playerManager.PlayerLife = playerManager.PlayerLife - EnemyDamage;
         logManeger.Damage2();
 
