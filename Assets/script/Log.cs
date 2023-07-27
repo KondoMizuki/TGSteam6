@@ -72,7 +72,7 @@ public class Log : MonoBehaviour
 
     public void scene()
     {
-        SceneManager.LoadScene("Result");
+        SceneManager.LoadScene("GameOrver");
     }
 
     // Update is called once per frame
