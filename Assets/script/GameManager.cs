@@ -170,7 +170,7 @@ public class GameManager : MonoBehaviour
 
     void player()
     {
-        int rad = Random.Range(0, 101);
+        int rad = Random.Range(0, 101);//クリティカル
         if (rad >= 95)
         {
             PlayerDamage = playerManager.PlayerAttack * 2;
