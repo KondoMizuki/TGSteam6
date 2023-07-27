@@ -720,6 +720,7 @@ MonoBehaviour:
   backText: {fileID: 1911452344}
   sellText: {fileID: 341855570}
   GoldText: {fileID: 1342860638}
+  Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
 --- !u!4 &816487511
 Transform:
   m_ObjectHideFlags: 0

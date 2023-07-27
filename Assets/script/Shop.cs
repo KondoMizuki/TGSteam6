@@ -18,6 +18,8 @@ public class Shop : MonoBehaviour
     public Text sellText;
     public Text GoldText;
 
+    public PlayerData Data;
+
 
     // Start is called before the first frame update
     void Start()
@@ -28,9 +30,9 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GoldText.text = "ŠŽ‹àF" + player.GOLD.ToString();
+        GoldText.text = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½F" + player.GOLD.ToString();
 
-        if (count > 2)//ƒJ[ƒ\ƒ‹ˆÚ“®
+        if (count > 2)//ï¿½Jï¿½[ï¿½\ï¿½ï¿½ï¿½Ú“ï¿½
         {
             count = count = 2;
         }
@@ -66,7 +68,7 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (upcount == 0 && count == 0 )//Œ•
+        if (upcount == 0 && count == 0 )//ï¿½ï¿½
         {
             SwordText.fontSize = 30;
             ShildText.fontSize = 20;
@@ -76,7 +78,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 1 )//‚
+        if (count == 1 )//ï¿½ï¿½
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 30;
@@ -86,7 +88,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == -1)//ŒC
+        if (count == -1)//ï¿½C
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -96,7 +98,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (upcount == -1 && count == 0)//ƒn[ƒg
+        if (upcount == -1 && count == 0)//ï¿½nï¿½[ï¿½g
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -106,7 +108,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 2)//”„‚é
+        if (count == 2)//ï¿½ï¿½ï¿½ï¿½
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -115,7 +117,7 @@ public class Shop : MonoBehaviour
             sellText.fontSize = 30;
             backText.fontSize = 20;
         }
-        if(count == -2)//–ß‚é
+        if(count == -2)//ï¿½ß‚ï¿½
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -126,15 +128,17 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space))//w“ü‚Í‹¤’Ê
+        if (Input.GetKeyDown(KeyCode.Space))//ï¿½wï¿½ï¿½ï¿½Í‹ï¿½ï¿½ï¿½
         {
-            if((count != 2 || count != -2) && player.GOLD >= equipment.BuyGold)
+
+            if((count != 2 || count != -2) && Data.GOLD >= equipment.BuyGold)
+
             {
-                player.MaxLife = player.MaxLife + equipment.MaxLife;
-                player.PlayerAttack = player.PlayerAttack + equipment.Attack;
-                player.DFE = player.DFE + equipment.DFE;
-                player.SPD = player.SPD + equipment.SPD;
-                player.GOLD -= equipment.BuyGold;
+                Data.PlayerMaxLife += equipment.MaxLife;
+                Data.Attack += equipment.Attack;
+                Data.DFE += equipment.DFE;
+                Data.SPD += equipment.SPD;
+                Data.GOLD -= equipment.BuyGold;
             }
             if(count == 2)
             {
