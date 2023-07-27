@@ -50,6 +50,6 @@ public class Player : MonoBehaviour
     void Update()
     {
         PlayerLifeText.text = "‘Ì—Í " + PlayerLife;
-    
+        GOLD = Data.GOLD;
     }
 }

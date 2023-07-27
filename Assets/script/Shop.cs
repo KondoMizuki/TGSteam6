@@ -18,6 +18,8 @@ public class Shop : MonoBehaviour
     public Text sellText;
     public Text GoldText;
 
+    public PlayerData Data;
+
 
     // Start is called before the first frame update
     void Start()
@@ -128,13 +130,13 @@ public class Shop : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))//w“ü‚Í‹¤’Ê
         {
-            if(count != 2 || count != -2 && player.GOLD >= equipment.BuyGold)
+            if((count != 2 || count != -2) && Data.GOLD >= equipment.BuyGold)
             {
-                player.MaxLife = player.MaxLife + equipment.MaxLife;
-                player.PlayerAttack = player.PlayerAttack + equipment.Attack;
-                player.DFE = player.DFE + equipment.DFE;
-                player.SPD = player.SPD + equipment.SPD;
-                player.GOLD -= equipment.BuyGold;
+                Data.PlayerMaxLife += equipment.MaxLife;
+                Data.Attack += equipment.Attack;
+                Data.DFE += equipment.DFE;
+                Data.SPD += equipment.SPD;
+                Data.GOLD -= equipment.BuyGold;
             }
             if(count == 2)
             {
