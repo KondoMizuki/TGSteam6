@@ -191,7 +191,10 @@ public class GameManager : MonoBehaviour
     void Enemy()
     {
         EnemyDamage = enemyManeger.Attack - playerManager.DFE;
-        
+        if(EnemyDamage <= 0)
+        {
+            EnemyDamage = 1;
+        }
         playerManager.PlayerLife = playerManager.PlayerLife - EnemyDamage;
         logManeger.Damage2();
 

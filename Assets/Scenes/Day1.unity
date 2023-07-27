@@ -1008,6 +1008,7 @@ MonoBehaviour:
   PlayerAttack: 5
   DFE: 5
   SPD: 5
+  GOLD: 0
   NameText: {fileID: 1730623915}
   PlayerLifeText: {fileID: 2110487697}
   playername: 
@@ -1030,6 +1031,7 @@ MonoBehaviour:
   itemManager: {fileID: 1675925447}
   gameManeger: {fileID: 1675925445}
   enemygenerator: {fileID: 1202191489}
+  Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
   isFrist: 1
   isDeath: 0
 --- !u!114 &1675925445

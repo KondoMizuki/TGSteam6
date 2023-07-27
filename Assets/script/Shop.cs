@@ -30,9 +30,9 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GoldText.text = "�������F" + player.GOLD.ToString();
+        GoldText.text = "所持金" + player.GOLD.ToString();
 
-        if (count > 2)//�J�[�\���ړ�
+        if (count > 2)//売る
         {
             count = count = 2;
         }
@@ -68,7 +68,7 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (upcount == 0 && count == 0 )//��
+        if (upcount == 0 && count == 0 )//剣
         {
             SwordText.fontSize = 30;
             ShildText.fontSize = 20;
@@ -78,7 +78,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 1 )//��
+        if (count == 1 )//盾
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 30;
@@ -88,7 +88,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == -1)//�C
+        if (count == -1)//靴
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -98,7 +98,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (upcount == -1 && count == 0)//�n�[�g
+        if (upcount == -1 && count == 0)//ハート
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -108,7 +108,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 2)//����
+        if (count == 2)//売る
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -117,7 +117,7 @@ public class Shop : MonoBehaviour
             sellText.fontSize = 30;
             backText.fontSize = 20;
         }
-        if(count == -2)//�߂�
+        if(count == -2)//戻る
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -128,7 +128,7 @@ public class Shop : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.Space))//�w���͋���
+        if (Input.GetKeyDown(KeyCode.Space))//共通処理
         {
 
             if((count != 2 || count != -2) && Data.GOLD >= equipment.BuyGold)

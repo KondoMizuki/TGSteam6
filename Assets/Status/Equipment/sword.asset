@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 1
   Item: "\u5263"
   MaxLife: 0
-  Attack: 5
+  Attack: 2
   DFE: 0
   SPD: 0
   BuyGold: 150

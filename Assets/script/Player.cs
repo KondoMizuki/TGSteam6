@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
         NameText.text = "プレイヤー";
         playername = "プレイヤー";
 
+      
         playername = Data.Playername;
         PlayerLife = Data.Life;
         MaxLife = Data.PlayerMaxLife;
