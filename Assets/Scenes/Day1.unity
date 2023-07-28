@@ -2141,7 +2141,7 @@ GameObject:
   - component: {fileID: 184417259}
   - component: {fileID: 184417258}
   m_Layer: 0
-  m_Name: TX Props Road Sign E
+  m_Name: kanban
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
