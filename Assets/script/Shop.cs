@@ -132,7 +132,6 @@ public class Shop : MonoBehaviour
         {
 
             if((count != 2 && count != -2) && Data.GOLD >= equipment.BuyGold)
-
             {
                 Data.PlayerMaxLife += equipment.MaxLife;
                 Data.Attack += equipment.Attack;
