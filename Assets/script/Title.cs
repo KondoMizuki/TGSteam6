@@ -15,12 +15,12 @@ public class Title : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-         Data.PlayerMaxLife = 30;
+       Data.PlayerMaxLife = 30;
        Data.Attack = 7;
        Data.DFE = 3;
        Data.SPD = 5;
        Data.GOLD = 1000;
-      
+        Debug.Log("Startメソッドは動きました。");
     }
 
     // Update is called once per frame
