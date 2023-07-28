@@ -68,7 +68,7 @@ public class Log : MonoBehaviour
 
             D_Data.DropedItemList.Add(itemManager.Itemname);
 
-            Data.GOLD = Data.GOLD + enemyManager.DORPGOLD;
+            Data.GOLD  += enemyManager.DORPGOLD;
 
             isFrist = false;
         }

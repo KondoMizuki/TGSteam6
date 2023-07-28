@@ -131,7 +131,7 @@ public class Shop : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))//共通処理
         {
 
-            if((count != 2 || count != -2) && Data.GOLD >= equipment.BuyGold)
+            if((count != 2 && count != -2) && Data.GOLD >= equipment.BuyGold)
 
             {
                 Data.PlayerMaxLife += equipment.MaxLife;
@@ -140,10 +140,12 @@ public class Shop : MonoBehaviour
                 Data.SPD += equipment.SPD;
                 Data.GOLD -= equipment.BuyGold;
             }
+            else
             if(count == 2)
             {
                 //SceneManager.LoadScene("Sell");
             }
+            else
             if(count == -2)
             {
                 SceneManager.LoadScene("Standby");
