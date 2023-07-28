@@ -4,7 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 23
+<<<<<<< HEAD
   productGUID: 00000000000000000000000000000000
+=======
+  productGUID: 1a5aaacd9e68896438df8d3935d5ed67
+>>>>>>> parent of 9c43849 (Revert "Merge branch 'main' of https://github.com/KondoMizuki/TGSteam6")
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
