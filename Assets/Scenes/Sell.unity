@@ -162,8 +162,8 @@ MonoBehaviour:
   Data8: {fileID: 11400000, guid: 51ab281fa2522e141bfa45ec164f7be5, type: 2}
   Data9: {fileID: 11400000, guid: ac8da9c0480df3442b6d352e14dba234, type: 2}
   Data10: {fileID: 11400000, guid: 7ca441fe8b33b0043b6db47a4890de59, type: 2}
-  selltext: {fileID: 865569078}
-  backtext: {fileID: 1753189549}
+  selltext: {fileID: 1753189549}
+  backtext: {fileID: 865569078}
   P_S_Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
   P_Data: {fileID: 11400000, guid: b7036924380858842bdd8a3e4ecb7e7c, type: 2}
   PossessionItemText: {fileID: 1842504452}
