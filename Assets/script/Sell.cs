@@ -48,7 +48,6 @@ public class Sell : MonoBehaviour
         }
         foreach (string key in dic.Keys)
         {
-            Debug.Log(key + " = " + dic[key]);
             PossessionItemText.text += key + "Å~" + dic[key] + "\n";
 
             for (int i = 0; i <= dic[key]; i++)

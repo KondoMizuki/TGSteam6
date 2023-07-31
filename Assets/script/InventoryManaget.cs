@@ -44,7 +44,6 @@ public class InventoryManaget : MonoBehaviour
             }
             foreach (string key in dic.Keys)
             {
-                Debug.Log(key + " = " + dic[key]);
                 PossessionItemText.text += key + "Å~" + dic[key] + "\n";
             }
             //PossessionItemText.text = "èäéùïi:" + string.Join(",", P_Data.PlayerPossessionItemList);
