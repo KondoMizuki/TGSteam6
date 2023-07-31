@@ -18,6 +18,8 @@ public class InventoryManaget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        PossessionItemText.text = "Š•i:" + "\n";
+
         InventoryPanel.SetActive(false);
 
         PossessionItem = P_Data.PlayerPossessionItemList.Count;
@@ -43,7 +45,7 @@ public class InventoryManaget : MonoBehaviour
             foreach (string key in dic.Keys)
             {
                 Debug.Log(key + " = " + dic[key]);
-                PossessionItemText.text += "Š•i:" + key + "~" + dic[key] + " , ";
+                PossessionItemText.text += key + "~" + dic[key] + "\n";
             }
             //PossessionItemText.text = "Š•i:" + string.Join(",", P_Data.PlayerPossessionItemList);
         }
