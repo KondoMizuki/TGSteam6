@@ -19,20 +19,39 @@ public class InventoryManaget : MonoBehaviour
     void Start()
     {
         InventoryPanel.SetActive(false);
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
         PossessionItem = P_Data.PlayerPossessionItemList.Count;
 
         if (PossessionItem == 0)
         {
             PossessionItemText.text = "所持品はありません";
-        } else if (PossessionItem >= 1)
-        {
-            PossessionItemText.text = "所持品:" + string.Join(",", P_Data.PlayerPossessionItemList);
         }
+        else if (PossessionItem >= 1)
+        {
+            Dictionary<string, int> dic = new Dictionary<string, int>();
+            foreach (string key in P_Data.PlayerPossessionItemList)
+            {
+                if (dic.ContainsKey(key))
+                {
+                    dic[key]++;
+                }
+                else
+                {
+                    dic.Add(key, 1);
+                }
+            }
+            foreach (string key in dic.Keys)
+            {
+                Debug.Log(key + " = " + dic[key]);
+                PossessionItemText.text += "所持品:" + key + "×" + dic[key] + " , ";
+            }
+            //PossessionItemText.text = "所持品:" + string.Join(",", P_Data.PlayerPossessionItemList);
+        }
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
         if (Input.GetKeyDown(KeyCode.E))
         {
             InventoryPanel.SetActive(!InventoryPanel.activeSelf);

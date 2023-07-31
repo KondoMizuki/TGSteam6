@@ -142,7 +142,7 @@ public class Shop : MonoBehaviour
             else
             if(count == 2)
             {
-                //SceneManager.LoadScene("Sell");
+                SceneManager.LoadScene("Sell");
             }
             else
             if(count == -2)

@@ -15,7 +15,7 @@ MonoBehaviour:
   id: 1
   Itemid: 1
   Enemyname: "\u30DC\u30FC\u30F3\u30EF\u30FC\u30E0"
-  Item: "\u68CD\u68D2"
+  Item: "\u30EF\u30FC\u30E0\u306E\u76AE"
   Life: 5
   EnemyMaxLife: 5
   Attack: 7
