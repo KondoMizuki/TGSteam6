@@ -18,6 +18,9 @@ public class Sell : MonoBehaviour
     public ItemData Data9;
     public ItemData Data10;
 
+    public Text selltext;
+    public Text backtext;
+
     public PlayerData P_S_Data;
 
     public PlayerPossessionItemData P_Data;
@@ -26,6 +29,7 @@ public class Sell : MonoBehaviour
     public Text priceText;
 
     public int SellGold;
+    public int count = 0;
 
     // Start is called before the first frame update
     void Start()
@@ -89,13 +93,49 @@ public class Sell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        priceText.text = SellGold.ToString();
-        if (Input.GetKeyDown(KeyCode.Space))
+        if(count>1)
+        {
+            count = 1;
+        }
+        if(count <0 )
+        {
+            count = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            count = count - 1;
+        }
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
+        {
+            count = count + 1;
+        }
+
+        if(count == 0)
+        {
+            selltext.fontSize = 30;
+            backtext.fontSize = 20;
+        }
+        else
+        if(count == 1)
+        {
+            selltext.fontSize = 20;
+            backtext.fontSize = 30;
+        }
+       
+
+        priceText.text = "”„‹p‡Œv " + SellGold.ToString() + "G";
+        if (count == 0 &&Input.GetKeyDown(KeyCode.Space))
         {
             P_S_Data.GOLD += SellGold;
             SellGold = 0;
             P_Data.PlayerPossessionItemList.Clear();
             PossessionItemText.text = "";
+        }
+        else
+            if(count == 1 && Input.GetKeyDown(KeyCode.Space))
+        {
+            SceneManager.LoadScene("Standby");
         }
     }
 }
