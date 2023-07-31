@@ -135,7 +135,7 @@ public class Sell : MonoBehaviour
         else
             if(count == 1 && Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.LoadScene("Standby");
+            SceneManager.LoadScene("Shop");
         }
     }
 }
