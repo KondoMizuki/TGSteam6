@@ -46,7 +46,6 @@ public class InventoryManaget : MonoBehaviour
             {
                 PossessionItemText.text += key + "~" + dic[key] + "\n";
             }
-            //PossessionItemText.text = "Š•i:" + string.Join(",", P_Data.PlayerPossessionItemList);
         }
     }
 
