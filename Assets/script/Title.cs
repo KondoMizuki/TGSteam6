@@ -13,13 +13,17 @@ public class Title : MonoBehaviour
      public PlayerData Data;
 
     // Start is called before the first frame update
+    void Awake()
+    {
+        Data.PlayerMaxLife = 30;
+        Data.Attack = 7;
+        Data.DFE = 3;
+        Data.SPD = 5;
+        Data.GOLD = 1000;
+    }
     void Start()
     {
-       Data.PlayerMaxLife = 30;
-       Data.Attack = 7;
-       Data.DFE = 3;
-       Data.SPD = 5;
-       Data.GOLD = 1000;
+      
     }
 
     // Update is called once per frame
