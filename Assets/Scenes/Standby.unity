@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 37707920}
   - component: {fileID: 37707919}
   m_Layer: 0
-  m_Name: 4147678_l
+  m_Name: BackGround
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -614,7 +614,7 @@ GameObject:
   - component: {fileID: 561071553}
   - component: {fileID: 561071552}
   m_Layer: 5
-  m_Name: Back
+  m_Name: Option
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -673,7 +673,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Back
+  m_Text: Option
 --- !u!222 &561071553
 CanvasRenderer:
   m_ObjectHideFlags: 0
