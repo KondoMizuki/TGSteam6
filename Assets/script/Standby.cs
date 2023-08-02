@@ -7,7 +7,6 @@ using UnityEngine.UI;
 public class Standby : MonoBehaviour
 {
     public int count = 0;
-    public int upcount = 0;
     public Text NextText;
     public Text ShopText;
     public Text BackText;
