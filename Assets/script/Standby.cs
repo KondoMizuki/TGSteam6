@@ -55,7 +55,6 @@ public class Standby : MonoBehaviour
             ShopText.fontSize = 30;
  
         }
-        
 
         
 
