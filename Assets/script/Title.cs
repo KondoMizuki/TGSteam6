@@ -29,45 +29,11 @@ public class Title : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (count > 1)//ƒJ[ƒ\ƒ‹ˆÚ“®
-        {
-            count = count = 1;
-        }
-        if (count < 0)
-        {
-            count = count = 0;
-        }
 
-        if (Input.GetKey(KeyCode.RightArrow))
-        {
-            count = count + 1;
-        }
-        if (Input.GetKey(KeyCode.LeftArrow))
-        {
-            count = count - 1;
-        }
-
-
-        if (count == 0)
-        {
-            StartText.fontSize = 30;
-            OptionText.fontSize = 20;
-        }
-        else
-            if (count == 1)
-        {
-            StartText.fontSize = 20;
-            OptionText.fontSize = 30;
-        }
-
-        if (count == 0 && Input.GetKey(KeyCode.Space))
+        if ( Input.GetKey(KeyCode.Space))
         {
             SceneManager.LoadScene("Standby");
         }
-        else
-            if (count == 1 && Input.GetKey(KeyCode.Space))
-        {
-
-        }
+       
     }
 }
