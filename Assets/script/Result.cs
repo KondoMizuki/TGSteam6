@@ -24,11 +24,11 @@ public class Result : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (P_Data.PlayerPossessionItemList.Count > 0)
+        if (D_Data.DropedItemList.Count > 0)
         {
             DropedItemText.text = "í—˜•i:" + string.Join(",", D_Data.DropedItemList);
         }
-        else if (P_Data.PlayerPossessionItemList.Count == 0)
+        else if (D_Data.DropedItemList.Count == 0)
         {
             DropedItemText.text = "¡‰ñ‚Ìí“¬‚Å‚Íí—˜•i‚Í‚ ‚è‚Ü‚¹‚ñ‚Å‚µ‚½B";
         }
