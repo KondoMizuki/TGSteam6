@@ -6,12 +6,10 @@ using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
 {
-    public Text GamrOverText;
-
     // Start is called before the first frame update
     void Start()
     {
-        GamrOverText.text = "GameOver";
+
     }
 
     // Update is called once per frame
@@ -21,7 +19,7 @@ public class GameOver : MonoBehaviour
         {
             Application.Quit();
 
-            //UnityEditor.EditorApplication.isPlaying = false;
+            UnityEditor.EditorApplication.isPlaying = false;
         }
     }
 }
