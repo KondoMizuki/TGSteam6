@@ -9,7 +9,6 @@ public class Shop : MonoBehaviour
     public Equipment equipment;
     public  Player player;
     public int count;
-    public int upcount = 1;
     public Text SwordText;
     public Text ShildText;
     public Text ShoesText;
@@ -32,23 +31,16 @@ public class Shop : MonoBehaviour
     {
         GoldText.text = player.GOLD.ToString() + "G";
 
-        if (count > 2)//売る
+        if (count > 4)//売る
         {
-            count = count = 2;
+            count = count = 4;
         }
-        if (count < -2)
+        if (count < -1)
         {
-            count = count = -2;
+            count = count = -1;
         }
 
-        if(upcount > 0)
-        {
-            upcount = 0;
-        }
-        if(upcount < -1)
-        {
-            upcount = -1;
-        }
+      
 
         if (Input.GetKeyDown(KeyCode.RightArrow))
         {
@@ -58,17 +50,10 @@ public class Shop : MonoBehaviour
         {
             count = count - 1;
         }
-        if(Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            upcount = upcount + 1; 
-        }
-        if(Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            upcount = upcount - 1;
-        }
+       
 
 
-        if (upcount == 0 && count == 0 )//剣
+        if ( count == 0 )//剣
         {
             SwordText.fontSize = 30;
             ShildText.fontSize = 20;
@@ -78,27 +63,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 1 )//盾
-        {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 30;
-            ShoesText.fontSize = 20;
-            heartText.fontSize = 20;
-            sellText.fontSize = 20;
-            backText.fontSize = 20;
-        }
-        else
-        if (count == -1)//靴
-        {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 20;
-            ShoesText.fontSize = 30;
-            heartText.fontSize = 20;
-            sellText.fontSize = 20;
-            backText.fontSize = 20;
-        }
-        else
-        if (upcount == -1 && count == 0)//ハート
+        if (count == 1 )//ハート
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -108,7 +73,27 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 2)//売る
+        if (count == 2)//靴
+        {
+            SwordText.fontSize = 20;
+            ShildText.fontSize = 20;
+            ShoesText.fontSize = 30;
+            heartText.fontSize = 20;
+            sellText.fontSize = 20;
+            backText.fontSize = 20;
+        }
+        else
+        if ( count == 3)//ハート
+        {
+            SwordText.fontSize = 20;
+            ShildText.fontSize = 30;
+            ShoesText.fontSize = 20;
+            heartText.fontSize = 20;
+            sellText.fontSize = 20;
+            backText.fontSize = 20;
+        }
+        else
+        if (count == 4)//売る
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -117,7 +102,7 @@ public class Shop : MonoBehaviour
             sellText.fontSize = 30;
             backText.fontSize = 20;
         }
-        if(count == -2)//戻る
+        if(count == -1)//戻る
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -131,7 +116,7 @@ public class Shop : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))//共通処理
         {
 
-            if((count != 2 && count != -2) && Data.GOLD >= equipment.BuyGold)
+            if((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
             {
                 Data.PlayerMaxLife += equipment.MaxLife;
                 Data.Attack += equipment.Attack;
@@ -140,15 +125,22 @@ public class Shop : MonoBehaviour
                 Data.GOLD -= equipment.BuyGold;
             }
             else
-            if(count == 2)
+            if(count == 4)
             {
                 SceneManager.LoadScene("Sell");
             }
             else
-            if(count == -2)
+            if(count == -1)
             {
                 SceneManager.LoadScene("Standby");
             }
         }
+
+       
+    }
+
+    public void OnClickSword()
+    {
+
     }
 }

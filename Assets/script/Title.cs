@@ -36,4 +36,8 @@ public class Title : MonoBehaviour
         }
        
     }
+    public void OnClick()
+    {
+        SceneManager.LoadScene("Standby");
+    }
 }
