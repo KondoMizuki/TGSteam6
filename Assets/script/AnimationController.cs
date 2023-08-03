@@ -8,16 +8,19 @@ public class AnimationController : MonoBehaviour
     public Log logmanager;
     public float endTime = 1.2f;
     public float time;
+    public AudioClip audioClip1;
+    [SerializeField] private AudioSource audioSource;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        Debug.Log(gamemanager.isAttack);
         //GetComponentを用いてAnimatorコンポーネントを取り出す.
         Animator animator = GetComponent<Animator>();
 
@@ -32,6 +35,10 @@ public class AnimationController : MonoBehaviour
         {
             trans = 1;
             gamemanager.isAttack = false;
+
+            audioSource = gameObject.GetComponent<AudioSource>();
+            audioSource.clip = audioClip1;
+            audioSource.Play();
         }
         else if(logmanager.isDeath)
         {
