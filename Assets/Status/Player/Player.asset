@@ -15,8 +15,8 @@ MonoBehaviour:
   id: 
   Playername: "\u30D7\u30EC\u30A4\u30E4\u30FC"
   Life: 30
-  PlayerMaxLife: 33
-  Attack: 23
-  DFE: 6
-  SPD: 14
-  GOLD: 270
+  PlayerMaxLife: 61
+  Attack: 63
+  DFE: 55
+  SPD: 73
+  GOLD: 99939430

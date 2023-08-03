@@ -137,4 +137,16 @@ public class Sell : MonoBehaviour
             SceneManager.LoadScene("Shop");
         }
     }
+
+    public void OnClicksell()
+    {
+        P_S_Data.GOLD += SellGold;
+        SellGold = 0;
+        P_Data.PlayerPossessionItemList.Clear();
+        PossessionItemText.text = "";
+    }
+    public void OnClickback()
+    {
+        SceneManager.LoadScene("Standby");
+    }
 }
