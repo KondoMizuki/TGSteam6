@@ -27,7 +27,7 @@ public class Shoplog : MonoBehaviour
                 item.text = "剣を鍛えてくれる　\n 攻撃力　+ 2";
                 break;
             case 2:
-                item.text = "動きが軽くなる靴　\n 速度　+ 3";
+                item.text = "動きやすくなる羽　\n 速度　+ 3";
                 break;
             case 3:
                 item.text = "盾を鍛えてくれる　\n 防御力　+ 3";

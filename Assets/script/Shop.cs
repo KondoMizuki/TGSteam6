@@ -138,14 +138,11 @@ public class Shop : MonoBehaviour
                 SceneManager.LoadScene("Standby");
             }
         }
-
-       
     }
 
     public void OnClickHP()
     {
         if ((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
-
         {
             count = 0;
             Invoke(nameof(buy), 0.1f);
@@ -166,8 +163,6 @@ public class Shop : MonoBehaviour
             count = 2;
             Invoke(nameof(buy), 0.1f);
         }
-
-         
     }
     public void OnClickDFE()
     {
@@ -176,12 +171,9 @@ public class Shop : MonoBehaviour
             count = 3;
             Invoke(nameof(buy), 0.1f);
         }
-
-           
     }
     public void OnClickback()
     {
-
         count = -1;
         SceneManager.LoadScene("Standby");
     }
