@@ -29,61 +29,71 @@ public class Sell : MonoBehaviour
     public Text priceText;
 
     public int SellGold;
+    public int PossessionItem;
     public int count = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        Dictionary<string, int> dic = new Dictionary<string, int>();
-        foreach (string key in P_Data.PlayerPossessionItemList)
-        {
-            if (dic.ContainsKey(key))
-            {
-                dic[key]++;
-            }
-            else
-            {
-                dic.Add(key, 1);
-            }
-        }
-        foreach (string key in dic.Keys)
-        {
-            PossessionItemText.text += key + "×" + dic[key] + "\n";
+        PossessionItem = P_Data.PlayerPossessionItemList.Count;
 
-            for (int i = 0; i <= dic[key]; i++)
+        if (PossessionItem == 0)
+        {
+            PossessionItemText.text = "売れるものがありません。\nまたのお越しをお待ちしております。";
+        }
+        else if (PossessionItem >= 1)
+        {
+            Dictionary<string, int> dic = new Dictionary<string, int>();
+            foreach (string key in P_Data.PlayerPossessionItemList)
             {
-                switch (key)
+                if (dic.ContainsKey(key))
                 {
-                    case "ワームの皮":
-                        SellGold += Data.SellingPrice;
-                        break;
-                    case "分泌物":
-                        SellGold += Data2.SellingPrice;
-                        break;
-                    case "魂の炎":
-                        SellGold += Data3.SellingPrice;
-                        break;
-                    case "牙":
-                        SellGold += Data4.SellingPrice;
-                        break;
-                    case "蜘蛛の糸":
-                        SellGold += Data5.SellingPrice;
-                        break;
-                    case "オオカミの毛皮":
-                        SellGold += Data6.SellingPrice;
-                        break;
-                    case "毒針":
-                        SellGold += Data7.SellingPrice;
-                        break;
-                    case "ワームの牙":
-                        SellGold += Data8.SellingPrice;
-                        break;
-                    case "ネズミのしっぽ":
-                        SellGold += Data9.SellingPrice;
-                        break;
-                    case "粘液":
-                        SellGold += Data10.SellingPrice;
-                        break;
+                    dic[key]++;
+                }
+                else
+                {
+                    dic.Add(key, 1);
+                }
+            }
+            foreach (string key in dic.Keys)
+            {
+                PossessionItemText.text += key + "×" + dic[key] + "\n";
+
+                for (int i = 0; i <= dic[key]; i++)
+                {
+                    switch (key)
+                    {
+                        case "ワームの皮":
+                            SellGold += Data.SellingPrice;
+                            break;
+                        case "分泌物":
+                            SellGold += Data2.SellingPrice;
+                            break;
+                        case "魂の炎":
+                            SellGold += Data3.SellingPrice;
+                            break;
+                        case "牙":
+                            SellGold += Data4.SellingPrice;
+                            break;
+                        case "蜘蛛の糸":
+                            SellGold += Data5.SellingPrice;
+                            break;
+                        case "オオカミの毛皮":
+                            SellGold += Data6.SellingPrice;
+                            break;
+                        case "毒針":
+                            SellGold += Data7.SellingPrice;
+                            break;
+                        case "ワームの牙":
+                            SellGold += Data8.SellingPrice;
+                            break;
+                        case "ネズミのしっぽ":
+                            SellGold += Data9.SellingPrice;
+                            break;
+                        case "粘液":
+                            SellGold += Data10.SellingPrice;
+                            break;
+                    }
                 }
             }
         }

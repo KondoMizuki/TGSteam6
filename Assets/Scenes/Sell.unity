@@ -169,6 +169,7 @@ MonoBehaviour:
   PossessionItemText: {fileID: 1842504452}
   priceText: {fileID: 625299008}
   SellGold: 0
+  PossessionItem: 0
   count: 0
 --- !u!4 &39238132
 Transform:
@@ -415,7 +416,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 44e98d9aa383d3d4b90e7085bfb510a7, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.21
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1258,7 +1259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1130639984
 RectTransform:
   m_ObjectHideFlags: 0
