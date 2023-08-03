@@ -11,15 +11,15 @@ public class Player : MonoBehaviour
 
     public PlayerData Data;
 
-    public int PlayerLife = 15;
+    public int PlayerLife ;
 
-    public int MaxLife = 15;
+    public int MaxLife;
 
-    public int PlayerAttack = 5;
+    public int PlayerAttack ;
 
-    public int DFE = 5;
+    public int DFE ;
 
-    public int SPD = 5;
+    public int SPD ;
 
     public int GOLD;
 

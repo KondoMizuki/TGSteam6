@@ -15,6 +15,10 @@ public class Shop : MonoBehaviour
     public Text heartText;
     public Text backText;
     public Text sellText;
+    public Text attack;
+    public Text heart;
+    public Text shoes;
+    public Text shield;
     public Text GoldText;
 
     public PlayerData Data;
@@ -29,6 +33,10 @@ public class Shop : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        attack.text = Data.Attack.ToString();
+        heart.text = Data.PlayerMaxLife.ToString();
+        shoes.text = Data.SPD.ToString();
+        shield.text = Data.DFE.ToString();
         GoldText.text = player.GOLD.ToString() + "G";
 
         if (count > 4)//売る
@@ -53,7 +61,7 @@ public class Shop : MonoBehaviour
        
 
 
-        if ( count == 0 )//剣
+        if ( count == 0 )//ハート
         {
             SwordText.fontSize = 30;
             ShildText.fontSize = 20;
@@ -63,7 +71,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if (count == 1 )//ハート
+        if (count == 1 )//剣
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 20;
@@ -83,7 +91,7 @@ public class Shop : MonoBehaviour
             backText.fontSize = 20;
         }
         else
-        if ( count == 3)//ハート
+        if ( count == 3)//盾
         {
             SwordText.fontSize = 20;
             ShildText.fontSize = 30;
@@ -118,11 +126,7 @@ public class Shop : MonoBehaviour
 
             if((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
             {
-                Data.PlayerMaxLife += equipment.MaxLife;
-                Data.Attack += equipment.Attack;
-                Data.DFE += equipment.DFE;
-                Data.SPD += equipment.SPD;
-                Data.GOLD -= equipment.BuyGold;
+                buy();
             }
             else
             if(count == 4)
@@ -139,8 +143,43 @@ public class Shop : MonoBehaviour
        
     }
 
-    public void OnClickSword()
+    public void OnClickHP()
     {
+        count = 0;
+        Invoke(nameof(buy), 0.1f);
+    }
+    public void OnClickAtack()
+    {
+        count = 1;
+        Invoke(nameof(buy), 0.1f);
+    }
+    public void OnClickSPD()
+    {
+        count = 2;
+        Invoke(nameof(buy), 0.1f);
+    }
+    public void OnClickDFE()
+    {
+        count = 3;
+        Invoke(nameof(buy), 0.1f);
+    }
+    public void OnClickback()
+    {
+        count = -1;
+        SceneManager.LoadScene("Standby");
+    }
 
+    public void OnClicksell()
+    {
+        count = -1;
+        SceneManager.LoadScene("Sell");
+    }
+    public void buy()
+    {
+        Data.PlayerMaxLife += equipment.MaxLife;
+        Data.Attack += equipment.Attack;
+        Data.DFE += equipment.DFE;
+        Data.SPD += equipment.SPD;
+        Data.GOLD -= equipment.BuyGold;
     }
 }
