@@ -13,7 +13,7 @@ public class NEXT : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -57,7 +57,27 @@ public class NEXT : MonoBehaviour
         else
             if (count == 1 && Input.GetKey(KeyCode.Space))
         {
-
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;//ゲームプレイ終了
+#else
+            Application.Quit();//ゲームプレイ終了
+#endif
         }
     }
+
+    public void Onclicknext()
+    {
+        SceneManager.LoadScene("Standby");
+    }
+    public void Onclick()
+    {
+        SceneManager.LoadScene("Standby");
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;//ゲームプレイ終了
+#else
+        Application.Quit();//ゲームプレイ終了
+#endif
+    }
+
+
 }
