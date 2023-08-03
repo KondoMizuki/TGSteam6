@@ -24,7 +24,11 @@ public class Title : MonoBehaviour
     }
     void Start()
     {
-      
+        Data.PlayerMaxLife = 30;
+        Data.Attack = 7;
+        Data.DFE = 3;
+        Data.SPD = 5;
+        Data.GOLD = 1000;
     }
 
     // Update is called once per frame
