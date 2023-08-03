@@ -6,10 +6,10 @@ using UnityEngine.UI;
 
 public class Standby : MonoBehaviour
 {
-    public int count = 0;
+    public int count = 1;
     public Text NextText;
     public Text ShopText;
-    public Text BackText;
+    
 
 
     // Start is called before the first frame update
@@ -45,30 +45,39 @@ public class Standby : MonoBehaviour
 
         if (count == 0)
         {
-            NextText.fontSize = 30;
-            ShopText.fontSize = 20;
+            NextText.fontSize = 20;
+            ShopText.fontSize = 30;
         }
         else
             if (count == 1)
         {
-            NextText.fontSize = 20;
-            ShopText.fontSize = 30;
+            NextText.fontSize = 30;
+            ShopText.fontSize = 20;
  
         }
 
         
 
-        if (count == 0  && Input.GetKey(KeyCode.Space))//バトル画面へ
+        if (count == 1  && Input.GetKey(KeyCode.Space))//バトル画面へ
         {
             
             SceneManager.LoadScene("Day1");
 
         }
         else
-            if (count == 1 && Input.GetKey(KeyCode.Space))//ショップ
+            if (count == 0 && Input.GetKey(KeyCode.Space))//ショップ
         {
             SceneManager.LoadScene("Shop");
         }
        
     }
+    public void OnclickStart()
+    {
+        SceneManager.LoadScene("Day1");
+    }
+    public void OnclickShop()
+    {
+        SceneManager.LoadScene("Shop");
+    }
+
 }
