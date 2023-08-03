@@ -18,7 +18,7 @@ public class InventoryManaget : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        PossessionItemText.text = "Š•i:" + "\n";
+        PossessionItemText.text = "Š•i\n";
 
         InventoryPanel.SetActive(false);
 
