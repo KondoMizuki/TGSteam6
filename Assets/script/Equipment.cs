@@ -44,7 +44,7 @@ public class Equipment : MonoBehaviour
     void Update()
     {
        
-        if (shop.count == 0)
+        if (shop.count == 0)//ÉnÅ[Ég
         {
             id = Data.id;
             MaxLife = Data.MaxLife;
@@ -54,7 +54,7 @@ public class Equipment : MonoBehaviour
             BuyGold = Data.BuyGold;
         }
         else
-            if (shop.count == 1)
+            if (shop.count == 1)//åï
         {
             id = Data2.id;
             MaxLife = Data2.MaxLife;
@@ -64,7 +64,7 @@ public class Equipment : MonoBehaviour
             BuyGold = Data2.BuyGold;
         }
         else
-         if (shop.count == 2)
+         if (shop.count == 2)//åC
         {
             id = Data3.id;
             Item = Data3.Item;
@@ -75,7 +75,7 @@ public class Equipment : MonoBehaviour
             BuyGold = Data3.BuyGold;
         }
         else
-            if ( shop.count == 3)
+            if ( shop.count == 3)//èÇ
         {
             id = Data4.id;
             MaxLife = Data4.MaxLife;

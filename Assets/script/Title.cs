@@ -15,6 +15,7 @@ public class Title : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
+        
         Data.PlayerMaxLife = 30;
         Data.Attack = 7;
         Data.DFE = 3;
