@@ -123,7 +123,6 @@ public class Shop : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))//共通処理
         {
-
             if((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
             {
                 buy();
@@ -145,33 +144,51 @@ public class Shop : MonoBehaviour
 
     public void OnClickHP()
     {
-        count = 0;
-        Invoke(nameof(buy), 0.1f);
+        if ((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
+
+        {
+            count = 0;
+            Invoke(nameof(buy), 0.1f);
+        }
     }
     public void OnClickAtack()
     {
-        count = 1;
-        Invoke(nameof(buy), 0.1f);
+        if ((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
+        {
+            count = 1;
+            Invoke(nameof(buy), 0.1f);
+        }
     }
     public void OnClickSPD()
     {
-        count = 2;
-        Invoke(nameof(buy), 0.1f);
+        if ((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
+        {
+            count = 2;
+            Invoke(nameof(buy), 0.1f);
+        }
+
+         
     }
     public void OnClickDFE()
     {
-        count = 3;
-        Invoke(nameof(buy), 0.1f);
+        if ((count != -1 && count != 4) && Data.GOLD >= equipment.BuyGold)
+        {
+            count = 3;
+            Invoke(nameof(buy), 0.1f);
+        }
+
+           
     }
     public void OnClickback()
     {
+
         count = -1;
         SceneManager.LoadScene("Standby");
     }
 
     public void OnClicksell()
     {
-        count = -1;
+        count = 4;
         SceneManager.LoadScene("Sell");
     }
     public void buy()
