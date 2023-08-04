@@ -13,9 +13,4 @@ MonoBehaviour:
   m_Name: Player Possession Item Data
   m_EditorClassIdentifier: 
   PlayerPossessionItemList:
-  - "\u3042\uFF53\uFF44\uFF46\uFF56\uFF42\uFF47"
-  - "\u3042\uFF53\uFF44\uFF46\uFF56\uFF42\uFF47"
-  - "\u3042\uFF53\uFF44\uFF46\uFF56\uFF42\uFF47"
-  - "\u3042\uFF53\uFF44\uFF46\uFF56\uFF42\uFF47"
-  - "\u3042\uFF53\uFF44\uFF46\uFF56\uFF42\uFF47"
   - "\u30EF\u30FC\u30E0\u306E\u76AE"
