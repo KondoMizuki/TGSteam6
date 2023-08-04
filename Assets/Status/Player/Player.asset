@@ -16,7 +16,7 @@ MonoBehaviour:
   Playername: "\u30D7\u30EC\u30A4\u30E4\u30FC"
   Life: 30
   PlayerMaxLife: 157
-  Attack: 1
+  Attack: 22
   DFE: 43
-  SPD: 1
-  GOLD: 0
+  SPD: 13
+  GOLD: 1250

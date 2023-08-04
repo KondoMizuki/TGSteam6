@@ -24,7 +24,7 @@ public class GameManager : MonoBehaviour
 
     public int stage = 1;
 
-    public static int endstage = 1;
+    public static int endstage = 10;
 
     public bool isAttack = false;
     public bool isNext = false;
