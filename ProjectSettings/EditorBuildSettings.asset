@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sell.unity
     guid: 8a611904585cecf40b24f891aaf169ca
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Option.unity
     guid: 65179a116c59b004185d4c89d4c55668
   m_configObjects: {}
