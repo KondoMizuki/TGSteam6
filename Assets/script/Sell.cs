@@ -18,6 +18,8 @@ public class Sell : MonoBehaviour
     public ItemData Data9;
     public ItemData Data10;
 
+    
+
     public Text selltext;
     public Text backtext;
 
@@ -27,6 +29,11 @@ public class Sell : MonoBehaviour
 
     public Text PossessionItemText;
     public Text priceText;
+    public Text ATK;
+    public Text HP;
+    public Text SPD;
+    public Text DFE;
+    public Text Gold;
 
     public int SellGold;
     public int PossessionItem;
@@ -102,7 +109,14 @@ public class Sell : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(count>1)
+
+        HP.text = P_S_Data.PlayerMaxLife.ToString();
+        ATK.text = P_S_Data.Attack.ToString();
+        DFE.text = P_S_Data.DFE.ToString();
+        SPD.text = P_S_Data.SPD.ToString();
+        Gold.text = P_S_Data.GOLD.ToString();
+
+        if (count>1)
         {
             count = 1;
         }
