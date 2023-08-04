@@ -4,6 +4,7 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class Sell : MonoBehaviour
 {
@@ -153,6 +154,13 @@ public class Sell : MonoBehaviour
             P_S_Data.GOLD += SellGold;
             SellGold = 0;
             P_Data.PlayerPossessionItemList.Clear();
+
+            //ダーティとしてマークする(変更があった事を記録する)
+            EditorUtility.SetDirty(P_Data);
+
+            //保存する
+            AssetDatabase.SaveAssets();
+
             PossessionItemText.text = "売れるものがありません。\nまたのお越しをお待ちしております。";
         }
         else
@@ -167,6 +175,13 @@ public class Sell : MonoBehaviour
         P_S_Data.GOLD += SellGold;
         SellGold = 0;
         P_Data.PlayerPossessionItemList.Clear();
+
+        //ダーティとしてマークする(変更があった事を記録する)
+        EditorUtility.SetDirty(P_Data);
+
+        //保存する
+        AssetDatabase.SaveAssets();
+
         PossessionItemText.text = "売れるものがありません。\nまたのお越しをお待ちしております。";
     }
     public void OnClickback()
