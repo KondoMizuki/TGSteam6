@@ -22,4 +22,11 @@ public class GameOver : MonoBehaviour
             //UnityEditor.EditorApplication.isPlaying = false;
         }
     }
+
+    public void EndBt()
+    {
+        Application.Quit();
+
+        //UnityEditor.EditorApplication.isPlaying = false;
+    }
 }
