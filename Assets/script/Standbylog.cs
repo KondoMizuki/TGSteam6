@@ -12,6 +12,7 @@ public class Standbylog : MonoBehaviour
     public Text ATK;
     public Text DFE;
     public Text SPD;
+    public Text G;
 
 
 
@@ -28,6 +29,7 @@ public class Standbylog : MonoBehaviour
         ATK.text =player.PlayerAttack.ToString();
         SPD.text = player.SPD.ToString();
         DFE.text = player.DFE.ToString();
+        G.text = player.GOLD.ToString();
         message.text = "åªç›ÇÃç≈è„äKÇÕ" + GameManager.endstage + "äK";
 
     }
