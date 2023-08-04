@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using UnityEditor;
 
 public class Result : MonoBehaviour
 {
@@ -19,6 +20,12 @@ public class Result : MonoBehaviour
         //P_Data.PlayerPossessionItemList.Sort();
 
         //D_Data.DropedItemList.Clear();
+
+        //ダーティとしてマークする(変更があった事を記録する)
+        EditorUtility.SetDirty(P_Data);
+
+        //保存する
+        AssetDatabase.SaveAssets();
     }
 
     // Update is called once per frame
