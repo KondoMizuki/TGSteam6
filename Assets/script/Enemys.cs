@@ -64,23 +64,23 @@ public class Enemys : MonoBehaviour
                 Destroy(this.gameObject);
             }
         }
-        else if ($"{name}" == "Scorpion(Clone)")
+        else if ($"{name}" == "Worm(Clone)")
         {
-            if (gamemanager.stage != 7)
+            if (gamemanager.stage != 8)
             {
                 Destroy(this.gameObject);
             }
         }
-        else if ($"{name}" == "Scorpion(Clone)")
+        else if ($"{name}" == "Rat(Clone)")
         {
-            if (gamemanager.stage != 7)
+            if (gamemanager.stage != 9)
             {
                 Destroy(this.gameObject);
             }
         }
-        else if ($"{name}" == "Scorpion(Clone)")
+        else if ($"{name}" == "Ooze(Clone)")
         {
-            if (gamemanager.stage != 7)
+            if (gamemanager.stage != 10)
             {
                 Destroy(this.gameObject);
             }

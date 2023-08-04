@@ -139,7 +139,7 @@ public class Sell : MonoBehaviour
             P_S_Data.GOLD += SellGold;
             SellGold = 0;
             P_Data.PlayerPossessionItemList.Clear();
-            PossessionItemText.text = "";
+            PossessionItemText.text = "”„‚ê‚é‚à‚Ì‚ª‚ ‚è‚Ü‚¹‚ñB\n‚Ü‚½‚Ì‚¨‰z‚µ‚ğ‚¨‘Ò‚¿‚µ‚Ä‚¨‚è‚Ü‚·B";
         }
         else
             if(count == 1 && Input.GetKeyDown(KeyCode.Space))
