@@ -14,4 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerPossessionItemList:
   - "\u30EF\u30FC\u30E0\u306E\u76AE"
+  - "\u9B42\u306E\u708E"
+  - "\u6BD2\u91DD"
+  - "\u30EF\u30FC\u30E0\u306E\u7259"
   - "\u30EF\u30FC\u30E0\u306E\u76AE"
+  - "\u8718\u86DB\u306E\u7CF8"
+  - "\u30AA\u30AA\u30AB\u30DF\u306E\u6BDB\u76AE"
+  - "\u30EF\u30FC\u30E0\u306E\u7259"
