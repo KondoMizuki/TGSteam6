@@ -24,10 +24,10 @@ public class Title : MonoBehaviour
         Data.GOLD = 1000;
 
         //ダーティとしてマークする(変更があった事を記録する)
-        EditorUtility.SetDirty(Data);
+        //EditorUtility.SetDirty(Data);
 
         //保存する
-        AssetDatabase.SaveAssets();
+        //AssetDatabase.SaveAssets();
     }
     void Start()
     {
@@ -38,10 +38,10 @@ public class Title : MonoBehaviour
         Data.GOLD = 1000;
 
         //ダーティとしてマークする(変更があった事を記録する)
-        EditorUtility.SetDirty(Data);
+        //EditorUtility.SetDirty(Data);
 
         //保存する
-        AssetDatabase.SaveAssets();
+        //AssetDatabase.SaveAssets();
     }
 
     // Update is called once per frame
