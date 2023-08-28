@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using UnityEditor;
+using System.IO;
 
 public class Result : MonoBehaviour
 {
@@ -22,10 +23,10 @@ public class Result : MonoBehaviour
         //D_Data.DropedItemList.Clear();
 
         //ダーティとしてマークする(変更があった事を記録する)
-        EditorUtility.SetDirty(P_Data);
+        //EditorUtility.SetDirty(P_Data);
 
         //保存する
-        AssetDatabase.SaveAssets();
+        //AssetDatabase.SaveAssets();
     }
 
     // Update is called once per frame
