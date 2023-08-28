@@ -64,60 +64,60 @@ public class Shop : MonoBehaviour
         if ( count == 0 )//ハート
         {
             SwordText.fontSize = 30;
-            ShildText.fontSize = 20;
-            ShoesText.fontSize = 20;
-            heartText.fontSize = 20;
-            sellText.fontSize = 20;
-            backText.fontSize = 20;
+            ShildText.fontSize = 30;
+            ShoesText.fontSize = 30;
+            heartText.fontSize = 40;
+            sellText.fontSize = 30;
+            backText.fontSize = 30;
         }
         else
         if (count == 1 )//剣
         {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 20;
-            ShoesText.fontSize = 20;
+            SwordText.fontSize = 40;
+            ShildText.fontSize = 30;
+            ShoesText.fontSize = 30;
             heartText.fontSize = 30;
-            sellText.fontSize = 20;
-            backText.fontSize = 20;
+            sellText.fontSize = 30;
+            backText.fontSize = 30;
         }
         else
         if (count == 2)//靴
         {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 20;
-            ShoesText.fontSize = 30;
-            heartText.fontSize = 20;
-            sellText.fontSize = 20;
-            backText.fontSize = 20;
+            SwordText.fontSize = 30;
+            ShildText.fontSize = 30;
+            ShoesText.fontSize = 40;
+            heartText.fontSize = 30;
+            sellText.fontSize = 30;
+            backText.fontSize = 30;
         }
         else
         if ( count == 3)//盾
         {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 30;
-            ShoesText.fontSize = 20;
-            heartText.fontSize = 20;
-            sellText.fontSize = 20;
-            backText.fontSize = 20;
+            SwordText.fontSize = 30;
+            ShildText.fontSize = 40;
+            ShoesText.fontSize = 30;
+            heartText.fontSize = 30;
+            sellText.fontSize = 30;
+            backText.fontSize = 30;
         }
         else
         if (count == 4)//売る
         {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 20;
-            ShoesText.fontSize = 20;
-            heartText.fontSize = 20;
-            sellText.fontSize = 30;
-            backText.fontSize = 20;
+            SwordText.fontSize = 30;
+            ShildText.fontSize = 30;
+            ShoesText.fontSize = 30;
+            heartText.fontSize = 30;
+            sellText.fontSize = 40;
+            backText.fontSize = 30;
         }
         if(count == -1)//戻る
         {
-            SwordText.fontSize = 20;
-            ShildText.fontSize = 20;
-            ShoesText.fontSize = 20;
-            heartText.fontSize = 20;
-            sellText.fontSize = 20;
-            backText.fontSize = 30;
+            SwordText.fontSize = 30;
+            ShildText.fontSize = 30;
+            ShoesText.fontSize = 30;
+            heartText.fontSize = 30;
+            sellText.fontSize = 30;
+            backText.fontSize = 40;
         }
 
 
