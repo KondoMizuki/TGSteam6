@@ -12,27 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20dbae0c28fb8b841bc9eb766f198e8b, type: 3}
   m_Name: Player Possession Item Data
   m_EditorClassIdentifier: 
-  PlayerPossessionItemList:
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u9B42\u306E\u708E"
-  - "\u6BD2\u91DD"
-  - "\u30EF\u30FC\u30E0\u306E\u7259"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-<<<<<<< HEAD
-  - "\u8718\u86DB\u306E\u7CF8"
-  - "\u30AA\u30AA\u30AB\u30DF\u306E\u6BDB\u76AE"
-  - "\u30EF\u30FC\u30E0\u306E\u7259"
-=======
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u5206\u6CCC\u7269"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u5206\u6CCC\u7269"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u9B42\u306E\u708E"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u30EF\u30FC\u30E0\u306E\u76AE"
-  - "\u5206\u6CCC\u7269"
->>>>>>> 5565f626e90c39eeb935b402848e4d5aabbff691
+  PlayerPossessionItemList: []

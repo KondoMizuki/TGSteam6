@@ -37840,7 +37840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9c14738ed779a34ca6ded6f325c35a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  P_Data: {fileID: 11400000, guid: b7036924380858842bdd8a3e4ecb7e7c, type: 2}
+  P_Data: {fileID: 11400000, guid: ac965ce64b4d509468d09e2d7fa17a60, type: 2}
   PossessionItemText: {fileID: 30607103}
   InventoryPanel: {fileID: 1326533424}
 --- !u!114 &1675925449
