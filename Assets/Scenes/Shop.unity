@@ -2037,6 +2037,8 @@ MonoBehaviour:
   shield: {fileID: 2032409234}
   GoldText: {fileID: 477909071}
   Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
+  D_Data: {fileID: 11400000, guid: 24cd8d7bae458e6439415d44210c7c64, type: 2}
+  P_Data: {fileID: 11400000, guid: ac965ce64b4d509468d09e2d7fa17a60, type: 2}
 --- !u!4 &816487511
 Transform:
   m_ObjectHideFlags: 0
@@ -2065,6 +2067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   D_Data: {fileID: 11400000, guid: 24cd8d7bae458e6439415d44210c7c64, type: 2}
+  P_Data: {fileID: 0}
   Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
   PlayerLife: 15
   MaxLife: 15

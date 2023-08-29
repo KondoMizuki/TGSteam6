@@ -25,7 +25,7 @@ public class Sell : MonoBehaviour
     public Text backtext;
 
     public PlayerData P_S_Data;
-
+    public DropedItemData D_Data;
     public PlayerPossessionItemData P_Data;
 
     public Text PossessionItemText;

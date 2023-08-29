@@ -22,6 +22,8 @@ public class Shop : MonoBehaviour
     public Text GoldText;
 
     public PlayerData Data;
+    public DropedItemData D_Data;
+    public PlayerPossessionItemData P_Data;
 
 
     // Start is called before the first frame update

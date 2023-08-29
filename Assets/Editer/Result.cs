@@ -8,6 +8,7 @@ using System.IO;
 
 public class Result : MonoBehaviour
 {
+    public PlayerData Data;
     public DropedItemData D_Data;
     public PlayerPossessionItemData P_Data;
 

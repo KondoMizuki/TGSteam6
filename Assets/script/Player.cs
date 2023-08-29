@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public DropedItemData D_Data;
+    public PlayerPossessionItemData P_Data;
 
     public PlayerData Data;
 

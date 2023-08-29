@@ -215,7 +215,7 @@ GameObject:
   - component: {fileID: 39238132}
   - component: {fileID: 39238131}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Sell
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,6 +246,7 @@ MonoBehaviour:
   selltext: {fileID: 1753189549}
   backtext: {fileID: 865569078}
   P_S_Data: {fileID: 11400000, guid: f9190006d07a87348b817b133f9dc8cb, type: 2}
+  D_Data: {fileID: 11400000, guid: 24cd8d7bae458e6439415d44210c7c64, type: 2}
   P_Data: {fileID: 11400000, guid: ac965ce64b4d509468d09e2d7fa17a60, type: 2}
   PossessionItemText: {fileID: 1842504452}
   priceText: {fileID: 625299008}
