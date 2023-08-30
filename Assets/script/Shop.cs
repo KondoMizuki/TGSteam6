@@ -192,5 +192,6 @@ public class Shop : MonoBehaviour
         Data.DFE += equipment.DFE;
         Data.SPD += equipment.SPD;
         Data.GOLD -= equipment.BuyGold;
+        Data.Life = Data.PlayerMaxLife;
     }
 }
