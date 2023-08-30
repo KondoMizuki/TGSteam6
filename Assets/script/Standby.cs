@@ -45,14 +45,14 @@ public class Standby : MonoBehaviour
 
         if (count == 0)
         {
-            NextText.fontSize = 30;
-            ShopText.fontSize = 40;
+            NextText.fontSize = 40;
+            ShopText.fontSize = 50;
         }
         else
             if (count == 1)
         {
-            NextText.fontSize = 40;
-            ShopText.fontSize = 30;
+            NextText.fontSize = 50;
+            ShopText.fontSize = 40;
  
         }
 

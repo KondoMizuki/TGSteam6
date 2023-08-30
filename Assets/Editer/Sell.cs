@@ -137,14 +137,14 @@ public class Sell : MonoBehaviour
 
         if(count == 0)
         {
-            selltext.fontSize = 40;
-            backtext.fontSize = 30;
+            selltext.fontSize = 50;
+            backtext.fontSize = 40;
         }
         else
         if(count == 1)
         {
-            selltext.fontSize = 30;
-            backtext.fontSize = 40;
+            selltext.fontSize = 40;
+            backtext.fontSize = 50;
         }
        
 

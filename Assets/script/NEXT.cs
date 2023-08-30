@@ -40,14 +40,14 @@ public class NEXT : MonoBehaviour
 
         if (count == 0)
         {
-            NextText.fontSize = 40;
-            EndText.fontSize = 30;
+            NextText.fontSize = 50;
+            EndText.fontSize = 40;
         }
         else
             if (count == 1)
         {
-            NextText.fontSize = 30;
-            EndText.fontSize = 40;
+            NextText.fontSize = 40;
+            EndText.fontSize = 50;
         }
 
         if (count == 0 && Input.GetKey(KeyCode.Space))
